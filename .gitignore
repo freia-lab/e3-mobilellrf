@@ -10,6 +10,7 @@
 core.*
 *-loc/*.Makefile
 mobilellrf/*.Makefile
+mobilellrf/O.*
 cellMods/
 testMods*/
 *PVs.list

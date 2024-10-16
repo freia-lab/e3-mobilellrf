@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-16 17:29:33 by konrad-->
+<display version="2.0.0">
+  <name>Agilent Func. Gen.</name>
+  <macros>
+    <agilent>LLRF-1:FUNCGEN-1</agilent>
+    <IOC>ioc29-llrfmobile</IOC>
+  </macros>
+  <height>900</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Mobile LLRF System</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>680</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <file>../freia-symbols/display-builder/agilent/agilent33220A.bob</file>
+    <x>380</x>
+    <y>60</y>
+    <width>380</width>
+    <height>790</height>
+  </widget>
+</display>
