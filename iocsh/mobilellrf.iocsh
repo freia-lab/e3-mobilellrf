@@ -1,0 +1,23 @@
+# This should be the included snippet to configure and run the deployed IOC. 
+# It should be loaded with
+#
+#   iocshLoad("$(mobilellrf_DIR)mobilellrf.iocsh", "MACRO1=xxx,MACRO2=yyy,...")
+
+#- ###            mobilellrf ioc                    ###
+#- ####################################################
+#- >> Mandatory
+#- ASYN_PORT1     - Asyn PORT name for agilent33220a function generator
+#- ASYN_PORT2     - Asyn PORT name for arduino PLC
+#- PREFIX1	  - PV PREFIX for agilent fg
+#- PREFIX2	  - PV PREFIX for arduino PLC
+#- IP_ADDR1	  - ethernet address of agilent fg
+#- IP_ADDR2	  - ethernet address of arduino PLC
+#- IOCNAME	  - Prefix for the asynRec
+#- TOP	   	  - top directory for autosave
+#-
+#- >> Optional
+#- IP_PORT1	  - IP port number for agilent fg (default 5025)
+#- IP_PORT2	  - IP port number for arduino PLC (default 502)
+#- DEVICE1	  - device name for agilent fg (default FUNCGEN-1)
+
+iocshLoad("$(agilent33220a_DIR)agilent33220a.iocsh", "IP=$(IP_ADDR1),P=$(PREFIX1),DEV=$(DEVICE1=FUNCGEN-1),ASYN_PORT=$(ASYN_PORT1)")
