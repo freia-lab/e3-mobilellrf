@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-17 13:43:34 by konrad-->
+<!--Saved on 2024-10-18 14:19:42 by konrgaje-->
 <display version="2.0.0">
   <name>LLRF Mobile</name>
   <macros>
     <agilent>LLRF-1:FUNCGEN-1</agilent>
     <IOC>ioc29-llrfmobile</IOC>
   </macros>
-  <width>1900</width>
+  <width>1750</width>
   <height>1000</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -47,9 +47,9 @@
         <group_name></group_name>
       </tab>
     </tabs>
-    <x>20</x>
-    <y>60</y>
-    <width>1820</width>
-    <height>880</height>
+    <x>10</x>
+    <y>50</y>
+    <width>1730</width>
+    <height>950</height>
   </widget>
 </display>

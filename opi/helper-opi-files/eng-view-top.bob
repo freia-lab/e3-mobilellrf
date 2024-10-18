@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-18 10:59:41 by konrad-->
+<!--Saved on 2024-10-18 14:25:24 by konrgaje-->
 <display version="2.0.0">
   <name>eng-view</name>
-  <width>1600</width>
-  <height>880</height>
+  <width>1610</width>
+  <height>930</height>
   <widget type="tabs" version="2.0.0">
     <macros>
       <agilent>LLRF-1:FUNCGEN-1</agilent>
@@ -70,8 +70,8 @@ pulsed mode, output disabled</tooltip>
         </children>
       </tab>
     </tabs>
-    <width>1410</width>
-    <height>860</height>
+    <width>1610</width>
+    <height>930</height>
     <active_tab>1</active_tab>
   </widget>
 </display>

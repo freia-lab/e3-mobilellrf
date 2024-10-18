@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-17 13:38:27 by konrad-->
+<!--Saved on 2024-10-18 14:39:38 by konrgaje-->
 <display version="2.0.0">
   <name>oper-view</name>
+  <width>1610</width>
+  <height>930</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -45,5 +47,13 @@
       <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
       </font>
     </font>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>../../freia-symbols/images/Cavity_SS.png</file>
+    <x>100</x>
+    <y>110</y>
+    <width>300</width>
+    <height>270</height>
   </widget>
 </display>
