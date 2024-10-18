@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-08-08 15:28:43 by konrad-->
+<display version="2.0.0">
+  <name>DO</name>
+  <width>410</width>
+  <height>30</height>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button</name>
+    <pv_name>$(P)$(D)DO-0$(N)</pv_name>
+    <x>190</x>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(D)DO-0$(N)</pv_name>
+    <x>300</x>
+    <y>5</y>
+    <width>60</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(D)DO-0$(N)</pv_name>
+    <x>370</x>
+    <y>5</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(D)DO-0$(N).DESC</pv_name>
+    <x>20</x>
+    <y>5</y>
+    <width>140</width>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

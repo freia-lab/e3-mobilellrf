@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-18 10:59:41 by konrad-->
+<display version="2.0.0">
+  <name>eng-view</name>
+  <width>1600</width>
+  <height>880</height>
+  <widget type="tabs" version="2.0.0">
+    <macros>
+      <agilent>LLRF-1:FUNCGEN-1</agilent>
+    </macros>
+    <tabs>
+      <tab>
+        <name>Arduino PLC</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>arduinoplc.bob</file>
+            <x>10</x>
+            <y>10</y>
+            <width>1388</width>
+            <height>702</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Function Generator</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_1</name>
+            <file>../../freia-symbols/display-builder/agilent/agilent33220A.bob</file>
+            <x>20</x>
+            <y>20</y>
+            <width>378</width>
+            <height>782</height>
+          </widget>
+          <widget type="group" version="3.0.0">
+            <name>  RF Mode</name>
+            <x>527</x>
+            <y>121</y>
+            <width>222</width>
+            <height>85</height>
+            <transparent>true</transparent>
+            <widget type="choice" version="2.0.0">
+              <name>Choice Button</name>
+              <pv_name>$(agilent):Mode:cPls</pv_name>
+              <y>5</y>
+              <width>180</width>
+              <height>35</height>
+              <items>
+                <item>CW</item>
+                <item>Pulsed</item>
+              </items>
+            </widget>
+          </widget>
+          <widget type="action_button" version="3.0.0">
+            <name>Action Button</name>
+            <actions>
+              <action type="write_pv">
+                <pv_name>$(pv_name).PROC</pv_name>
+                <value>1</value>
+                <description>Set Defaults</description>
+              </action>
+            </actions>
+            <pv_name>$(agilent):cmdSetDefaults</pv_name>
+            <x>568</x>
+            <y>222</y>
+            <tooltip>Default settings,
+pulsed mode, output disabled</tooltip>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <width>1410</width>
+    <height>860</height>
+    <active_tab>1</active_tab>
+  </widget>
+</display>

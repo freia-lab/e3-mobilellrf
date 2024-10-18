@@ -1,0 +1,79 @@
+record(calc, "$(P)Connected:Position-HDW") {
+    field(INPA, "LLRF-Aux:ArduinoPMC:DI-00")
+    field(INPB, "LLRF-Aux:ArduinoPMC:DI-01")
+    field(INPC, "LLRF-Aux:ArduinoPMC:DI-02")
+    field(CALC, "D=0?C*4+B*2+A:E")
+    field(SDIS, "$(P)Connected:Position-SIM MS")
+    field(DISV, "-1")
+    info(autosaveFields,"D E")
+    field(PINI, "YES")
+}
+
+record (bi, "$(P)Connected:Position-SIM") {
+    field(SCAN, "1 second")    
+    field(INP, "$(P)Connected:Position-HDW.D")
+    field(OSV, "MINOR")
+}
+
+record (mbbi, "$(P)Connected:Position") {
+    field(INP, "$(P)Connected:Position-HDW PP MS")
+    field(ZRVL, "0")
+    field(ZRST, "None")
+    field(ONVL, "1")
+    field(ONST, "HNOSS Pos 1")
+    field(TWVL, "2")
+    field(TWST, "HNOSS Pos 2")
+    field(THVL, "3")
+    field(THST, "HNOSS Pos 2A")    
+    field(FRVL, "4")
+    field(FRST, "Gersemi Pos 1")    
+    field(FVVL, "5")
+    field(FVST, "Gersemi Pos 2")    
+    field(SXVL, "6")
+    field(SXST, "Gersemi Pos 3")    
+}
+
+record (longout, "CstatH-Ctrl:Pos1:CAV-LB") {
+    field(DRVL, 0)
+    field(DRVH, 66)
+    info(autosaveFields,"VAL")
+}
+record (longout, "CstatH-Ctrl:Pos2:CAV-LB") {
+    field(DRVL, 0)
+    field(DRVH, 66)
+    info(autosaveFields,"VAL")
+}
+record (longout, "CstatH-Ctrl:Pos2A:CAV-LB") {
+    field(DRVL, 0)
+    field(DRVH, 66)
+    info(autosaveFields,"VAL")
+}
+
+record (longout, "CstatV-Ctrl:Pos1:CAV-LB") {
+    field(DRVL, 0)
+    field(DRVH, 66)
+    info(autosaveFields,"VAL")
+}
+record (longout, "CstatV-Ctrl:Pos2:CAV-LB") {
+    field(DRVL, 0)
+    field(DRVH, 66)
+    info(autosaveFields,"VAL")
+}
+record (longout, "CstatV-Ctrl:Pos3:CAV-LB") {
+    field(DRVL, 0)
+    field(DRVH, 66)
+    info(autosaveFields,"VAL")
+}
+
+record (sel, "$(P)Connected:CAV-LB") {
+    field(INPA, "0")
+    field(INPB, "CstatH-Ctrl:Pos1:CAV-LB")
+    field(INPC, "CstatH-Ctrl:Pos2:CAV-LB")
+    field(INPD, "CstatH-Ctrl:Pos2A:CAV-LB")
+    field(INPE, "CstatV-Ctrl:Pos1:CAV-LB")
+    field(INPF, "CstatV-Ctrl:Pos2:CAV-LB")
+    field(INPG, "CstatV-Ctrl:Pos3:CAV-LB")
+    field(SELM, "Specified")
+    field(NVL, "$(P)Connected:Position PP")
+    field(SCAN, "1 second")    
+}

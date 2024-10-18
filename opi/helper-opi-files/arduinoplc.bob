@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-17 13:26:31 by konrad-->
+<display version="2.0.0">
+  <name>ArduinoPMC</name>
+  <macros>
+    <P>LLRF-Aux:</P>
+    <D>ArduinoPMC:</D>
+  </macros>
+  <width>1400</width>
+  <height>700</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Arduino Portenta  Machine Control PLC</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>640</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>  Direct I/O Control</name>
+    <x>29</x>
+    <y>72</y>
+    <width>871</width>
+    <height>598</height>
+    <style>1</style>
+    <font>
+      <font name="GROUP-HEADER" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="BLUE-BORDER" red="47" green="135" blue="148">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <macros>
+        <N>0</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>10</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <macros>
+        <N>1</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>40</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <N>2</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>70</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <N>3</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>100</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <N>4</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>130</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <macros>
+        <N>5</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>160</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <macros>
+        <N>6</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>190</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <macros>
+        <N>7</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/coil.bob</file>
+      <x>20</x>
+      <y>220</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_9</name>
+      <macros>
+        <N>0</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>10</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_10</name>
+      <macros>
+        <N>1</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>40</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_11</name>
+      <macros>
+        <N>2</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>70</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_12</name>
+      <macros>
+        <N>3</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>100</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_13</name>
+      <macros>
+        <N>4</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>130</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_14</name>
+      <macros>
+        <N>5</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>160</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_15</name>
+      <macros>
+        <N>6</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>190</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_16</name>
+      <macros>
+        <N>7</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/di.bob</file>
+      <x>440</x>
+      <y>220</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <N>0</N>
+      </macros>
+      <file>embedded/ai-int.bob</file>
+      <x>20</x>
+      <y>270</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_17</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <file>embedded/ai-int.bob</file>
+      <x>20</x>
+      <y>300</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_18</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <file>embedded/ai-int.bob</file>
+      <x>20</x>
+      <y>330</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_19</name>
+      <macros>
+        <N>0</N>
+      </macros>
+      <file>embedded/ai-tp.bob</file>
+      <x>440</x>
+      <y>270</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_20</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <file>embedded/ai-tp.bob</file>
+      <x>440</x>
+      <y>300</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_21</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <file>embedded/ai-tp.bob</file>
+      <x>440</x>
+      <y>330</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_22</name>
+      <macros>
+        <N>0</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/ao.bob</file>
+      <x>20</x>
+      <y>410</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_23</name>
+      <macros>
+        <N>1</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/ao.bob</file>
+      <x>20</x>
+      <y>440</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_24</name>
+      <macros>
+        <N>2</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/ao.bob</file>
+      <x>20</x>
+      <y>470</y>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_25</name>
+      <macros>
+        <N>3</N>
+        <D>ArduinoPMC:</D>
+      </macros>
+      <file>embedded/ao.bob</file>
+      <x>20</x>
+      <y>500</y>
+      <height>30</height>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <macros>
+        <N>0</N>
+      </macros>
+      <x>440</x>
+      <y>410</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <y>5</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_1</name>
+        <pv_name>$(P)$(D)AO-0$(N)-RBK</pv_name>
+        <x>220</x>
+        <y>5</y>
+        <width>60</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_2</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <x>100</x>
+        <y>5</y>
+        <format>4</format>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_1</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <x>440</x>
+      <y>440</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_3</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <y>5</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_4</name>
+        <pv_name>$(P)$(D)AO-0$(N)-RBK</pv_name>
+        <x>220</x>
+        <y>5</y>
+        <width>60</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_5</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <x>100</x>
+        <y>5</y>
+        <format>4</format>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_2</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <x>440</x>
+      <y>470</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_6</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <y>5</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_7</name>
+        <pv_name>$(P)$(D)AO-0$(N)-RBK</pv_name>
+        <x>220</x>
+        <y>5</y>
+        <width>60</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_8</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <x>100</x>
+        <y>5</y>
+        <format>4</format>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>3</N>
+      </macros>
+      <x>440</x>
+      <y>500</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_9</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <y>5</y>
+        <width>90</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_10</name>
+        <pv_name>$(P)$(D)AO-0$(N)-RBK</pv_name>
+        <x>220</x>
+        <y>5</y>
+        <width>60</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_11</name>
+        <pv_name>$(P)$(D)HR-0$(N)</pv_name>
+        <x>100</x>
+        <y>5</y>
+        <format>4</format>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Read-back</name>
+      <text>Read-back</text>
+      <x>540</x>
+      <y>380</y>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Read-back_1</name>
+      <text>Set value</text>
+      <x>280</x>
+      <y>380</y>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>    Holding Registers (status variables)</name>
+    <x>910</x>
+    <y>370</y>
+    <width>451</width>
+    <height>300</height>
+    <style>1</style>
+    <font>
+      <font name="GROUP-HEADER" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="BLUE-BORDER" red="47" green="135" blue="148">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
+    <widget type="embedded" version="2.0.0">
+      <name>AO</name>
+      <macros>
+        <S>IVAR-00</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>12</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_1</name>
+      <macros>
+        <S>IVAR-01</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>42</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_2</name>
+      <macros>
+        <S>IVAR-02</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>72</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_3</name>
+      <macros>
+        <S>IVAR-03</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>102</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_4</name>
+      <macros>
+        <S>FVAR-00</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>137</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_5</name>
+      <macros>
+        <S>FVAR-01</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>167</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_6</name>
+      <macros>
+        <S>FVAR-02</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>197</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_7</name>
+      <macros>
+        <S>FVAR-03</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>227</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>    Holding Registers (parameters)</name>
+    <x>910</x>
+    <y>72</y>
+    <width>451</width>
+    <height>300</height>
+    <style>1</style>
+    <font>
+      <font name="GROUP-HEADER" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="BLUE-BORDER" red="47" green="135" blue="148">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_8</name>
+      <macros>
+        <S>IPAR-00</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>12</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_9</name>
+      <macros>
+        <S>IPAR-01</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>42</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_10</name>
+      <macros>
+        <S>IPAR-02</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>72</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_11</name>
+      <macros>
+        <S>IPAR-03</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>102</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_12</name>
+      <macros>
+        <S>FPAR-00</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>137</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_13</name>
+      <macros>
+        <S>FPAR-01</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>167</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_14</name>
+      <macros>
+        <S>FPAR-02</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>197</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>AO_15</name>
+      <macros>
+        <S>FPAR-03</S>
+      </macros>
+      <file>embedded/output.bob</file>
+      <x>20</x>
+      <y>227</y>
+      <width>410</width>
+      <height>30</height>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_display">
+        <file>cavity-sel.bob</file>
+        <target>window</target>
+        <description>Cavity selector...</description>
+      </action>
+    </actions>
+    <x>1130</x>
+    <y>20</y>
+    <width>120</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

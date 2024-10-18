@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-09 14:28:56 by konrad-->
+<display version="2.0.0">
+  <name>Cav-sel</name>
+  <width>660</width>
+  <height>690</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Cavity Selector</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   HNOSS   </name>
+    <x>20</x>
+    <y>50</y>
+    <width>622</width>
+    <height>242</height>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <macros>
+        <N>1</N>
+        <CS>CstatH</CS>
+      </macros>
+      <y>30</y>
+      <width>180</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_1</name>
+        <text>$(CS) Position $(N):</text>
+        <width>130</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry</name>
+        <pv_name>$(CS)-Ctrl:Pos$(N):CAV-LB</pv_name>
+        <x>150</x>
+        <width>30</width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_1</name>
+      <macros>
+        <N>2A</N>
+        <CS>CstatH</CS>
+      </macros>
+      <x>200</x>
+      <y>30</y>
+      <width>180</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_2</name>
+        <text>$(CS) Position $(N):</text>
+        <width>130</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_1</name>
+        <pv_name>$(CS)-Ctrl:Pos$(N):CAV-LB</pv_name>
+        <x>150</x>
+        <width>30</width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_2</name>
+      <macros>
+        <N>2</N>
+        <CS>CstatH</CS>
+      </macros>
+      <x>400</x>
+      <y>30</y>
+      <width>180</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_3</name>
+        <text>$(CS) Position $(N):</text>
+        <width>130</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_2</name>
+        <pv_name>$(CS)-Ctrl:Pos$(N):CAV-LB</pv_name>
+        <x>150</x>
+        <width>30</width>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Cavity number under test in HNOSS (zero of not installed)</text>
+      <width>570</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <file>../../freia-symbols/display-builder/cavity-tests/CstatH-DUT.bob</file>
+      <y>70</y>
+      <width>360</width>
+      <height>130</height>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   LLRF connection   </name>
+    <x>19</x>
+    <y>573</y>
+    <width>622</width>
+    <height>102</height>
+    <transparent>true</transparent>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>LLRF-Ctrl:Connected:Position-HDW.E</pv_name>
+      <x>310</x>
+      <y>40</y>
+      <width>50</width>
+      <height>20</height>
+      <items>
+        <item>0 No cavity</item>
+        <item>1 HNOSS Pos1</item>
+        <item>2 HNOSS Pos2</item>
+        <item>3 HNOSS Pos2A</item>
+        <item>4 Gersemi Pos1</item>
+        <item>5 Gersemi Pos2</item>
+        <item>6 Gersemi Pos3</item>
+      </items>
+      <items_from_pv>false</items_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>LLRF system connected to:</text>
+      <width>190</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>LLRF-Ctrl:Connected:Position</pv_name>
+      <x>200</x>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>330</x>
+      <width>140</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_11</name>
+        <text>Cavity Id: CAV-LB-</text>
+        <width>120</width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>LLRF-Ctrl:Connected:CAV-LB</pv_name>
+        <x>120</x>
+        <width>20</width>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>No cavity</text>
+      <x>320</x>
+      <width>150</width>
+      <visible>false</visible>
+      <transparent>false</transparent>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="!pvInt0">
+            <value>true</value>
+          </exp>
+          <pv_name>LLRF-Ctrl:Connected:CAV-LB</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box</name>
+      <pv_name>LLRF-Ctrl:Connected:Position-HDW.D</pv_name>
+      <label>Simulation</label>
+      <x>200</x>
+      <y>40</y>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   Gersemi   </name>
+    <x>20</x>
+    <y>292</y>
+    <width>622</width>
+    <height>292</height>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Group_3</name>
+      <macros>
+        <N>1</N>
+        <CS>CstatV</CS>
+      </macros>
+      <y>147</y>
+      <width>180</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_5</name>
+        <text>$(CS) Position $(N):</text>
+        <width>130</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_3</name>
+        <pv_name>$(CS)-Ctrl:Pos$(N):CAV-LB</pv_name>
+        <x>150</x>
+        <width>30</width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_4</name>
+      <macros>
+        <N>2</N>
+        <CS>CstatV</CS>
+      </macros>
+      <y>117</y>
+      <width>180</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_6</name>
+        <text>$(CS) Position $(N):</text>
+        <width>130</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_4</name>
+        <pv_name>$(CS)-Ctrl:Pos$(N):CAV-LB</pv_name>
+        <x>150</x>
+        <width>30</width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_5</name>
+      <macros>
+        <N>3</N>
+        <CS>CstatV</CS>
+      </macros>
+      <y>87</y>
+      <width>180</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label_7</name>
+        <text>$(CS) Position $(N):</text>
+        <width>130</width>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_5</name>
+        <pv_name>$(CS)-Ctrl:Pos$(N):CAV-LB</pv_name>
+        <x>150</x>
+        <width>30</width>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Cavity number under test in Gersemi
+(zero if not installed)</text>
+      <width>360</width>
+      <height>60</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <file>../../freia-symbols/display-builder/cavity-tests/CstatV-DUT.bob</file>
+      <x>430</x>
+      <width>145</width>
+      <height>250</height>
+    </widget>
+  </widget>
+</display>
