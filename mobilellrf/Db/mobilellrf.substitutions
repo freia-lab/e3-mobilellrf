@@ -1,0 +1,19 @@
+file "cav-pos.template" { pattern
+{P        	CS     POS   ENCODED_POS}
+{$(PCAV)	H      1     1}
+{$(PCAV)	H      2     2}
+{$(PCAV)	H      2A    3}
+{$(PCAV)	V      1     4}
+{$(PCAV)	V      2     5}
+{$(PCAV)	V      3     6}
+}
+
+file "cav-selector.template" { pattern 
+{P}
+{$(PCAV)}
+}
+
+file "rfmode-selector.template" { pattern
+{P}
+{$(PRF)}
+}

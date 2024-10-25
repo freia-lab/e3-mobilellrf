@@ -33,37 +33,6 @@ record (mbbi, "$(P)Connected:Position") {
     field(SXST, "Gersemi Pos 3")    
 }
 
-record (longout, "CstatH-Ctrl:Pos1:CAV-LB") {
-    field(DRVL, 0)
-    field(DRVH, 66)
-    info(autosaveFields,"VAL")
-}
-record (longout, "CstatH-Ctrl:Pos2:CAV-LB") {
-    field(DRVL, 0)
-    field(DRVH, 66)
-    info(autosaveFields,"VAL")
-}
-record (longout, "CstatH-Ctrl:Pos2A:CAV-LB") {
-    field(DRVL, 0)
-    field(DRVH, 66)
-    info(autosaveFields,"VAL")
-}
-
-record (longout, "CstatV-Ctrl:Pos1:CAV-LB") {
-    field(DRVL, 0)
-    field(DRVH, 66)
-    info(autosaveFields,"VAL")
-}
-record (longout, "CstatV-Ctrl:Pos2:CAV-LB") {
-    field(DRVL, 0)
-    field(DRVH, 66)
-    info(autosaveFields,"VAL")
-}
-record (longout, "CstatV-Ctrl:Pos3:CAV-LB") {
-    field(DRVL, 0)
-    field(DRVH, 66)
-    info(autosaveFields,"VAL")
-}
 
 record (sel, "$(P)Connected:CAV-LB") {
     field(INPA, "0")
@@ -76,4 +45,31 @@ record (sel, "$(P)Connected:CAV-LB") {
     field(SELM, "Specified")
     field(NVL, "$(P)Connected:Position PP")
     field(SCAN, "1 second")    
+}
+
+record(ao, "$(P)FwdPwr:sRdV") {
+   field (DESC, "Forward Power from LabView")
+   field (EGU, "W")
+   field (DTYP, "Soft Channel")
+   field (PREC, "1")
+   field (LOPR, "0")
+   field (HOPR, "350")
+}
+
+record(ao, "$(P)ReflPwr:sRdV") {
+   field (DESC, "Reflected Power from LabView")
+   field (EGU, "W")
+   field (DTYP, "Soft Channel")
+   field (PREC, "1")
+   field (LOPR, "0")
+   field (HOPR, "350")
+}
+
+record(ao, "$(P)InPwr:sRdV") {
+   field (DESC, "Input Power from LabView")
+   field (EGU, "W")
+   field (DTYP, "Soft Channel")
+   field (PREC, "1")
+   field (LOPR, "0")
+   field (HOPR, "350")
 }
