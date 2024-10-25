@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-22 18:23:47 by freiaop-->
+<!--Saved on 2024-10-25 13:03:23 by freiaop-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1610</width>
   <height>930</height>
+  <widget type="arc" version="2.0.0">
+    <name>Arc_5</name>
+    <x>440</x>
+    <y>220</y>
+    <width>58</width>
+    <height>276</height>
+    <start_angle>90.0</start_angle>
+    <total_angle>180.0</total_angle>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_82</name>
+    <class>GROUP</class>
+    <x>720</x>
+    <y>580</y>
+    <width>230</width>
+    <height>129</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>4</corner_width>
+    <corner_height>4</corner_height>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_81</name>
     <class>GROUP</class>
     <x>470</x>
     <y>750</y>
     <width>230</width>
-    <height>230</height>
+    <height>167</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -337,27 +374,6 @@
     <x>641</x>
     <y>100</y>
     <width>101</width>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_34</name>
-    <x>110</x>
-    <y>610</y>
-    <width>220</width>
-    <height>1</height>
-    <points>
-      <point x="220.0" y="0.0">
-      </point>
-      <point x="105.0" y="0.5">
-      </point>
-      <point x="0.0" y="1.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_91</name>
@@ -944,7 +960,7 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline_36</name>
     <x>338</x>
-    <y>800</y>
+    <y>792</y>
     <width>22</width>
     <height>1</height>
     <points>
@@ -1076,7 +1092,7 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline_41</name>
     <x>110</x>
-    <y>800</y>
+    <y>792</y>
     <width>30</width>
     <height>14</height>
     <points>
@@ -1126,7 +1142,7 @@
   <widget type="arc" version="2.0.0">
     <name>Arc_4</name>
     <x>990</x>
-    <y>740</y>
+    <y>733</y>
     <width>60</width>
     <height>60</height>
     <start_angle>270.0</start_angle>
@@ -1173,14 +1189,14 @@
   <widget type="label" version="2.0.0">
     <name>Label_34</name>
     <text>Cav 1: CAV-LB-</text>
-    <x>60</x>
+    <x>20</x>
     <y>90</y>
     <width>110</width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_8</name>
     <pv_name>CstatH-Ctrl:Pos1:CAV-LB</pv_name>
-    <x>159</x>
+    <x>119</x>
     <y>90</y>
     <width>30</width>
     <transparent>true</transparent>
@@ -1189,14 +1205,14 @@
   <widget type="label" version="2.0.0">
     <name>Label_35</name>
     <text>Cav 2A: CAV-LB-</text>
-    <x>60</x>
+    <x>20</x>
     <y>120</y>
     <width>110</width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_9</name>
     <pv_name>CstatH-Ctrl:Pos2A:CAV-LB</pv_name>
-    <x>169</x>
+    <x>129</x>
     <y>120</y>
     <width>30</width>
     <transparent>true</transparent>
@@ -1205,36 +1221,18 @@
   <widget type="label" version="2.0.0">
     <name>Label_36</name>
     <text>Cav 2: CAV-LB-</text>
-    <x>60</x>
+    <x>20</x>
     <y>150</y>
     <width>110</width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_10</name>
     <pv_name>CstatH-Ctrl:Pos2:CAV-LB</pv_name>
-    <x>159</x>
+    <x>119</x>
     <y>150</y>
     <width>30</width>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_5</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DI-00</pv_name>
-    <x>30</x>
-    <y>90</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_6</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DI-02</pv_name>
-    <x>30</x>
-    <y>120</y>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_7</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DI-01</pv_name>
-    <x>30</x>
-    <y>150</y>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_37</name>
@@ -1279,14 +1277,14 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_11</name>
-    <pv_name>HPRF-Cav1:FwdPwr:sRdV</pv_name>
+    <pv_name> LLRF-Ctrl:InPwr:sRdV</pv_name>
     <x>790</x>
     <y>600</y>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_44</name>
-    <x>370</x>
-    <y>260</y>
+    <x>380</x>
+    <y>302</y>
     <width>40</width>
     <height>1</height>
     <points>
@@ -1298,25 +1296,6 @@
     <line_width>2</line_width>
     <line_color>
       <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_45</name>
-    <x>571</x>
-    <y>777</y>
-    <width>19</width>
-    <height>41</height>
-    <points>
-      <point x="0.0" y="41.0">
-      </point>
-      <point x="19.0" y="0.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <arrows>2</arrows>
@@ -1421,21 +1400,6 @@
       <width>69</width>
     </widget>
   </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_65</name>
-    <x>549</x>
-    <y>790</y>
-    <width>60</width>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Background" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_46</name>
     <x>370</x>
@@ -1457,7 +1421,7 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline_47</name>
     <x>912</x>
-    <y>830</y>
+    <y>823</y>
     <width>20</width>
     <height>50</height>
     <points>
@@ -1490,13 +1454,13 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_13</name>
-    <pv_name>HPRF-Cav1:FwdPwr:sRdV</pv_name>
+    <pv_name> LLRF-Ctrl:FwdPwr:sRdV</pv_name>
     <x>790</x>
     <y>630</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_14</name>
-    <pv_name>HPRF-Cav1:FwdPwr:sRdV</pv_name>
+    <pv_name> LLRF-Ctrl:ReflPwr:sRdV</pv_name>
     <x>790</x>
     <y>663</y>
   </widget>
@@ -1506,7 +1470,7 @@
     <x>20</x>
     <y>240</y>
     <width>90</width>
-    <height>740</height>
+    <height>677</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -1643,24 +1607,6 @@
     <opacity>0.2</opacity>
   </widget>
   <widget type="arc" version="2.0.0">
-    <name>Arc_5</name>
-    <x>440</x>
-    <y>220</y>
-    <width>58</width>
-    <height>276</height>
-    <start_angle>90.0</start_angle>
-    <total_angle>180.0</total_angle>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="arc" version="2.0.0">
     <name>Arc_6</name>
     <x>1140</x>
     <y>220</y>
@@ -1680,19 +1626,19 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_8</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DI-00</pv_name>
+    <pv_name> CstatH-Ctrl:Pos1:DUT</pv_name>
     <x>570</x>
     <y>310</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_9</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DI-02</pv_name>
+    <pv_name> CstatH-Ctrl:Pos2A:DUT</pv_name>
     <x>861</x>
     <y>310</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_10</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DI-01</pv_name>
+    <pv_name> CstatH-Ctrl:Pos2:DUT</pv_name>
     <x>981</x>
     <y>310</y>
   </widget>
@@ -1718,9 +1664,9 @@
   <widget type="group" version="3.0.0">
     <name>SEL control</name>
     <x>140</x>
-    <y>206</y>
+    <y>207</y>
     <width>230</width>
-    <height>774</height>
+    <height>710</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="rectangle" version="2.0.0">
@@ -1728,7 +1674,7 @@
       <class>GROUP</class>
       <y>34</y>
       <width>230</width>
-      <height>740</height>
+      <height>677</height>
       <line_width>1</line_width>
       <line_color use_class="true">
         <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -1745,14 +1691,14 @@
       <name>Label_45</name>
       <text>RF SW</text>
       <x>50</x>
-      <y>608</y>
+      <y>633</y>
       <width>50</width>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_12</name>
       <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
       <x>50</x>
-      <y>628</y>
+      <y>654</y>
       <width>60</width>
     </widget>
     <widget type="polyline" version="2.0.0">
@@ -1775,23 +1721,6 @@
         </color>
       </line_color>
       <arrows>2</arrows>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_49</name>
-      <x>90</x>
-      <y>594</y>
-      <width>80</width>
-      <height>1</height>
-      <points>
-        <point x="80.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_77</name>
@@ -1902,6 +1831,34 @@
       </line_color>
       <arrows>2</arrows>
     </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="open_display">
+          <file>C:\opt\epics\opi\bob\arduinoPMC\arduinoplc_top.bob</file>
+          <target>window</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>ArduinoPMC</text>
+      <x>102</x>
+      <y>138</y>
+      <width>101</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_6</name>
+      <symbols>
+        <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off.svg</symbol>
+      </symbols>
+      <x>173</x>
+      <y>568</y>
+      <width>38</width>
+      <height>30</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+    </widget>
     <widget type="symbol" version="2.0.0">
       <name>Symbol_5</name>
       <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
@@ -1910,7 +1867,7 @@
         <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch On-GREEN.svg</symbol>
       </symbols>
       <x>60</x>
-      <y>579</y>
+      <y>568</y>
       <width>38</width>
       <height>30</height>
       <tooltip>$(pv_name)
@@ -1919,7 +1876,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_52</name>
-      <y>594</y>
+      <y>584</y>
       <width>60</width>
       <height>1</height>
       <points>
@@ -1933,33 +1890,22 @@ $(actions)</tooltip>
         </color>
       </line_color>
     </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_6</name>
-      <symbols>
-        <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off.svg</symbol>
-      </symbols>
-      <x>170</x>
-      <y>578</y>
-      <width>38</width>
-      <height>30</height>
-      <tooltip>$(pv_name)
-$(pv_value)
-$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_5</name>
-      <actions>
-        <action type="open_display">
-          <file>C:\opt\epics\opi\bob\arduinoPMC\arduinoplc_top.bob</file>
-          <target>window</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <text>ArduinoPMC</text>
-      <x>121</x>
-      <y>732</y>
-      <width>101</width>
-      <tooltip>$(actions)</tooltip>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_49</name>
+      <x>92</x>
+      <y>583</y>
+      <width>80</width>
+      <height>1</height>
+      <points>
+        <point x="80.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
   </widget>
   <widget type="rectangle" version="2.0.0">
@@ -1968,7 +1914,7 @@ $(actions)</tooltip>
     <x>720</x>
     <y>750</y>
     <width>140</width>
-    <height>230</height>
+    <height>167</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -1980,25 +1926,6 @@ $(actions)</tooltip>
     </background_color>
     <corner_width>10</corner_width>
     <corner_height>10</corner_height>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_82</name>
-    <class>GROUP</class>
-    <x>720</x>
-    <y>580</y>
-    <width>230</width>
-    <height>129</height>
-    <line_width>1</line_width>
-    <line_color use_class="true">
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </line_color>
-    <background_color use_class="true">
-      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-      </color>
-    </background_color>
-    <corner_width>4</corner_width>
-    <corner_height>4</corner_height>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_48</name>
@@ -2042,12 +1969,12 @@ $(actions)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_54</name>
-    <x>360</x>
-    <y>800</y>
-    <width>660</width>
-    <height>1</height>
+    <x>350</x>
+    <y>790</y>
+    <width>670</width>
+    <height>2</height>
     <points>
-      <point x="660.0" y="0.0">
+      <point x="670.0" y="2.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -2061,7 +1988,7 @@ $(actions)</tooltip>
   <widget type="ellipse" version="2.0.0">
     <name>Ellipse</name>
     <x>891</x>
-    <y>770</y>
+    <y>762</y>
     <width>60</width>
     <height>60</height>
     <line_width>2</line_width>
@@ -2102,16 +2029,16 @@ $(actions)</tooltip>
   </widget>
   <widget type="polygon" version="2.0.0">
     <name>Polygon</name>
-    <x>770</x>
+    <x>776</x>
     <y>769</y>
-    <width>50</width>
-    <height>63</height>
+    <width>35</width>
+    <height>43</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="0.0" y="63.0">
+      <point x="0.0" y="43.0">
       </point>
-      <point x="50.0" y="31.5">
+      <point x="35.0" y="21.5">
       </point>
     </points>
     <line_width>2</line_width>
@@ -2174,43 +2101,43 @@ $(actions)</tooltip>
     <name>Label_51</name>
     <text>+10dB</text>
     <x>498</x>
-    <y>859</y>
+    <y>840</y>
     <width>50</width>
   </widget>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_13</name>
     <pv_name>LLRF-Aux:ArduinoPMC:DO-00</pv_name>
-    <x>548</x>
-    <y>850</y>
-    <width>80</width>
+    <x>498</x>
+    <y>861</y>
+    <width>49</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_52</name>
     <text>+20dB</text>
-    <x>498</x>
-    <y>897</y>
+    <x>564</x>
+    <y>840</y>
     <width>50</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_53</name>
     <text>+40dB</text>
-    <x>498</x>
-    <y>938</y>
+    <x>630</x>
+    <y>840</y>
     <width>50</width>
   </widget>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_14</name>
     <pv_name>LLRF-Aux:ArduinoPMC:DO-01</pv_name>
-    <x>548</x>
-    <y>890</y>
-    <width>80</width>
+    <x>564</x>
+    <y>861</y>
+    <width>49</width>
   </widget>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_15</name>
     <pv_name>LLRF-Aux:ArduinoPMC:DO-02</pv_name>
-    <x>548</x>
-    <y>930</y>
-    <width>80</width>
+    <x>630</x>
+    <y>861</y>
+    <width>49</width>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_85</name>
@@ -2291,5 +2218,68 @@ $(actions)</tooltip>
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
       </color>
     </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_65</name>
+    <x>549</x>
+    <y>782</y>
+    <width>60</width>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_45</name>
+    <x>571</x>
+    <y>771</y>
+    <width>19</width>
+    <height>41</height>
+    <points>
+      <point x="0.0" y="41.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_34</name>
+    <x>110</x>
+    <y>610</y>
+    <width>220</width>
+    <height>1</height>
+    <points>
+      <point x="220.0" y="0.0">
+      </point>
+      <point x="105.0" y="0.5">
+      </point>
+      <point x="0.0" y="1.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_55</name>
+    <text>Trig</text>
+    <x>70</x>
+    <y>601</y>
+    <width>30</width>
+    <height>19</height>
   </widget>
 </display>
