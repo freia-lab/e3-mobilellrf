@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-25 13:03:23 by freiaop-->
+<!--Saved on 2024-10-28 15:44:16 by freiaop-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1610</width>
   <height>930</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_89</name>
+    <class>GROUP</class>
+    <x>336</x>
+    <y>267</y>
+    <width>53</width>
+    <height>44</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_66</name>
+    <class>GROUP</class>
+    <x>326</x>
+    <y>647</y>
+    <width>374</width>
+    <height>59</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_68</name>
+    <x>326</x>
+    <y>647</y>
+    <width>374</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+  </widget>
   <widget type="arc" version="2.0.0">
     <name>Arc_5</name>
-    <x>440</x>
+    <x>514</x>
     <y>220</y>
     <width>58</width>
     <height>276</height>
@@ -25,10 +75,10 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_82</name>
     <class>GROUP</class>
-    <x>720</x>
-    <y>580</y>
-    <width>230</width>
-    <height>129</height>
+    <x>859</x>
+    <y>750</y>
+    <width>187</width>
+    <height>150</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -38,16 +88,16 @@
       <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
       </color>
     </background_color>
-    <corner_width>4</corner_width>
-    <corner_height>4</corner_height>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_81</name>
     <class>GROUP</class>
-    <x>470</x>
+    <x>326</x>
     <y>750</y>
     <width>230</width>
-    <height>167</height>
+    <height>150</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -63,7 +113,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_75</name>
     <class>GROUP</class>
-    <x>800</x>
+    <x>874</x>
     <y>90</y>
     <width>191</width>
     <height>116</height>
@@ -82,7 +132,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_72</name>
     <class>GROUP-BLUE</class>
-    <x>470</x>
+    <x>544</x>
     <y>220</y>
     <width>700</width>
     <height>276</height>
@@ -99,7 +149,7 @@
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
-    <text>SRF Cavity Test LLRF Control</text>
+    <text>SRF Cavity Test in HNOSS</text>
     <x use_class="true">20</x>
     <y use_class="true">0</y>
     <width>550</width>
@@ -121,7 +171,7 @@
     <name>Label_24</name>
     <class>HEADER3</class>
     <text>Cav 2A</text>
-    <x>890</x>
+    <x>964</x>
     <y>306</y>
     <width>60</width>
     <height>25</height>
@@ -140,7 +190,7 @@
     <name>Label_25</name>
     <class>HEADER3</class>
     <text>Cav 2</text>
-    <x>1010</x>
+    <x>1084</x>
     <y>306</y>
     <width>58</width>
     <height>25</height>
@@ -155,21 +205,9 @@
     <transparent use_class="true">true</transparent>
     <vertical_alignment>1</vertical_alignment>
   </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_1</name>
-    <pv_name>CstatH-LHe:LT101:sRdV</pv_name>
-    <x>672</x>
-    <y>306</y>
-    <width>42</width>
-    <height>145</height>
-    <background_color>
-      <color red="230" green="235" blue="232" alpha="0">
-      </color>
-    </background_color>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_18</name>
-    <x>612</x>
+    <x>686</x>
     <y>459</y>
     <width>1</width>
     <height>60</height>
@@ -188,7 +226,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_22</name>
-    <x>900</x>
+    <x>974</x>
     <y>460</y>
     <width>1</width>
     <height>60</height>
@@ -207,7 +245,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_23</name>
-    <x>1020</x>
+    <x>1094</x>
     <y>460</y>
     <width>1</width>
     <height>60</height>
@@ -226,12 +264,12 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_26</name>
-    <x>370</x>
-    <y>280</y>
-    <width>650</width>
+    <x>300</x>
+    <y>290</y>
+    <width>796</width>
     <height>1</height>
     <points>
-      <point x="650.0" y="0.0">
+      <point x="796.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -245,7 +283,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_27</name>
-    <x>610</x>
+    <x>684</x>
     <y>290</y>
     <width>1</width>
     <height>1</height>
@@ -256,12 +294,11 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_28</name>
-    <x>611</x>
-    <y>280</y>
+    <x>686</x>
+    <y>290</y>
     <width>1</width>
-    <height>30</height>
     <points>
-      <point x="0.0" y="30.0">
+      <point x="0.0" y="20.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -274,12 +311,11 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_29</name>
-    <x>901</x>
-    <y>280</y>
+    <x>976</x>
+    <y>290</y>
     <width>1</width>
-    <height>30</height>
     <points>
-      <point x="0.0" y="30.0">
+      <point x="0.0" y="20.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -292,12 +328,11 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_30</name>
-    <x>1020</x>
-    <y>280</y>
+    <x>1096</x>
+    <y>290</y>
     <width>1</width>
-    <height>30</height>
     <points>
-      <point x="0.0" y="30.0">
+      <point x="0.0" y="20.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -310,7 +345,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_31</name>
-    <x>598</x>
+    <x>672</x>
     <y>260</y>
     <width>439</width>
     <height>50</height>
@@ -331,7 +366,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_32</name>
-    <x>890</x>
+    <x>964</x>
     <y>140</y>
     <width>230</width>
     <height>170</height>
@@ -352,7 +387,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_62</name>
     <class>GROUP-RED</class>
-    <x>470</x>
+    <x>544</x>
     <y>90</y>
     <width>290</width>
     <height>40</height>
@@ -371,14 +406,14 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
     <pv_name>RadProt-Bunker1:GD-02:sDoseRt</pv_name>
-    <x>641</x>
+    <x>715</x>
     <y>100</y>
     <width>101</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_91</name>
     <text>TT125</text>
-    <x>528</x>
+    <x>602</x>
     <y>310</y>
     <width>36</width>
     <height>19</height>
@@ -405,7 +440,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_67</name>
     <pv_name>CstatH-LHe:TT125:sRdV</pv_name>
-    <x>498</x>
+    <x>572</x>
     <y>327</y>
     <width>66</width>
     <height>17</height>
@@ -434,7 +469,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_92</name>
     <text>TT115</text>
-    <x>528</x>
+    <x>602</x>
     <y>409</y>
     <width>36</width>
     <height>19</height>
@@ -461,7 +496,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_68</name>
     <pv_name>CstatH-LHe:TT115:sRdV</pv_name>
-    <x>498</x>
+    <x>572</x>
     <y>426</y>
     <width>66</width>
     <height>17</height>
@@ -490,7 +525,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_93</name>
     <text>TT126</text>
-    <x>1068</x>
+    <x>1142</x>
     <y>306</y>
     <width>36</width>
     <height>18</height>
@@ -517,7 +552,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_69</name>
     <pv_name>CstatH-LHe:TT126:sRdV</pv_name>
-    <x>1068</x>
+    <x>1142</x>
     <y>323</y>
     <width>66</width>
     <height>17</height>
@@ -546,7 +581,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_94</name>
     <text>TT116</text>
-    <x>1068</x>
+    <x>1142</x>
     <y>408</y>
     <width>36</width>
     <height>19</height>
@@ -573,7 +608,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_70</name>
     <pv_name>CstatH-LHe:TT116:sRdV</pv_name>
-    <x>1068</x>
+    <x>1142</x>
     <y>429</y>
     <width>66</width>
     <height>17</height>
@@ -602,7 +637,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_128</name>
     <text>PT103</text>
-    <x>901</x>
+    <x>975</x>
     <y>220</y>
     <width>34</width>
     <height>17</height>
@@ -629,7 +664,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_141</name>
     <pv_name>CstatH-LHe:PT103:sRdV</pv_name>
-    <x>903</x>
+    <x>977</x>
     <y>236</y>
     <width>76</width>
     <height>16</height>
@@ -658,7 +693,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_129</name>
     <text>PT102</text>
-    <x>800</x>
+    <x>874</x>
     <y>220</y>
     <width>34</width>
     <height>17</height>
@@ -685,7 +720,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_142</name>
     <pv_name>CstatH-LHe:PT102:sRdV</pv_name>
-    <x>802</x>
+    <x>876</x>
     <y>236</y>
     <width>76</width>
     <height>16</height>
@@ -714,14 +749,14 @@
   <widget type="label" version="2.0.0">
     <name>Label_29</name>
     <text>GD02 (Inside bunker):</text>
-    <x>480</x>
+    <x>554</x>
     <y>100</y>
     <width>161</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_130</name>
     <text>FT550</text>
-    <x>1015</x>
+    <x>1089</x>
     <y>100</y>
     <width>36</width>
     <height>19</height>
@@ -748,7 +783,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_143</name>
     <pv_name>CstatH-RHtr:FT550:sRdV</pv_name>
-    <x>1010</x>
+    <x>1084</x>
     <y>118</y>
     <width>66</width>
     <height>17</height>
@@ -774,25 +809,10 @@
       </color>
     </border_color>
   </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>Action Button_2</name>
-    <actions>
-      <action type="open_display">
-        <file>C:\opt\epics\opi\bob\hnoss\Hnoss-freia-top.bob</file>
-        <target>tab</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <text>ALL</text>
-    <x>1094</x>
-    <y>233</y>
-    <width>60</width>
-    <tooltip>$(actions)</tooltip>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_131</name>
     <text>LT101</text>
-    <x>720</x>
+    <x>794</x>
     <y>290</y>
     <width>36</width>
     <height>18</height>
@@ -819,7 +839,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_144</name>
     <pv_name>CstatH-LHe:LT101:sRdV</pv_name>
-    <x>720</x>
+    <x>794</x>
     <y>307</y>
     <width>66</width>
     <height>17</height>
@@ -848,7 +868,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_132</name>
     <text>TT125</text>
-    <x>815</x>
+    <x>889</x>
     <y>314</y>
     <width>36</width>
     <height>19</height>
@@ -875,7 +895,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_145</name>
     <pv_name>CstatH-LHe:TT125:sRdV</pv_name>
-    <x>785</x>
+    <x>859</x>
     <y>331</y>
     <width>66</width>
     <height>17</height>
@@ -904,7 +924,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_133</name>
     <text>TT115</text>
-    <x>815</x>
+    <x>889</x>
     <y>413</y>
     <width>36</width>
     <height>19</height>
@@ -931,7 +951,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_146</name>
     <pv_name>CstatH-LHe:TT115:sRdV</pv_name>
-    <x>785</x>
+    <x>859</x>
     <y>430</y>
     <width>66</width>
     <height>17</height>
@@ -958,25 +978,8 @@
     </border_color>
   </widget>
   <widget type="polyline" version="2.0.0">
-    <name>Polyline_36</name>
-    <x>338</x>
-    <y>792</y>
-    <width>22</width>
-    <height>1</height>
-    <points>
-      <point x="22.0" y="0.0">
-      </point>
-      <point x="0.0" y="0.0">
-      </point>
-    </points>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-  </widget>
-  <widget type="polyline" version="2.0.0">
     <name>Polyline_37</name>
-    <x>470</x>
+    <x>544</x>
     <y>206</y>
     <width>40</width>
     <height>1</height>
@@ -995,7 +998,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_38</name>
-    <x>1134</x>
+    <x>1208</x>
     <y>206</y>
     <width>37</width>
     <height>1</height>
@@ -1015,7 +1018,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_31</name>
     <text> to CM</text>
-    <x>1090</x>
+    <x>1164</x>
     <y>196</y>
     <width>54</width>
     <height>26</height>
@@ -1027,7 +1030,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_32</name>
     <text> to maise</text>
-    <x>510</x>
+    <x>584</x>
     <y>196</y>
     <width>71</width>
     <height>26</height>
@@ -1039,7 +1042,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_63</name>
     <class>GROUP</class>
-    <x>510</x>
+    <x>584</x>
     <y>496</y>
     <width>71</width>
     <height>24</height>
@@ -1056,7 +1059,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_64</name>
     <class>GROUP</class>
-    <x>1052</x>
+    <x>1126</x>
     <y>496</y>
     <width>71</width>
     <height>24</height>
@@ -1073,7 +1076,7 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline_40</name>
     <x>110</x>
-    <y>280</y>
+    <y>290</y>
     <width>30</width>
     <height>10</height>
     <points>
@@ -1092,7 +1095,7 @@
   <widget type="polyline" version="2.0.0">
     <name>Polyline_41</name>
     <x>110</x>
-    <y>792</y>
+    <y>790</y>
     <width>30</width>
     <height>14</height>
     <points>
@@ -1110,7 +1113,7 @@
   </widget>
   <widget type="arc" version="2.0.0">
     <name>Arc_3</name>
-    <x>991</x>
+    <x>1065</x>
     <y>519</y>
     <width>60</width>
     <height>60</height>
@@ -1123,7 +1126,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_42</name>
-    <x>612</x>
+    <x>686</x>
     <y>519</y>
     <width>408</width>
     <height>1</height>
@@ -1141,8 +1144,8 @@
   </widget>
   <widget type="arc" version="2.0.0">
     <name>Arc_4</name>
-    <x>990</x>
-    <y>733</y>
+    <x>1064</x>
+    <y>731</y>
     <width>60</width>
     <height>60</height>
     <start_angle>270.0</start_angle>
@@ -1155,12 +1158,12 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_43</name>
-    <x>1049</x>
-    <y>550</y>
+    <x>1123</x>
+    <y>549</y>
     <width>1</width>
-    <height>220</height>
+    <height>211</height>
     <points>
-      <point x="0.0" y="220.0">
+      <point x="0.0" y="211.0">
       </point>
       <point x="1.0" y="0.0">
       </point>
@@ -1170,21 +1173,6 @@
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
-  </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>Action Button_3</name>
-    <actions>
-      <action type="open_display">
-        <file>C:\opt\epics\opi\bob\arduinoPMC\helper-opi-files\cavity-sel.bob</file>
-        <target>window</target>
-        <description>Open Display</description>
-      </action>
-    </actions>
-    <text>Cav selector</text>
-    <x>1068</x>
-    <y>455</y>
-    <width>90</width>
-    <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_34</name>
@@ -1235,56 +1223,55 @@
     <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_37</name>
-    <class>GROUP-TITLE</class>
-    <text>RF Power meters</text>
-    <x>730</x>
-    <y>560</y>
-    <width>210</width>
-    <height use_class="true">30</height>
-    <font use_class="true">
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <foreground_color use_class="true">
-      <color name="GROUP-TEXT" red="25" green="25" blue="25">
-      </color>
-    </foreground_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label_38</name>
     <text>TRM</text>
-    <x>740</x>
-    <y>600</y>
+    <x>879</x>
+    <y>802</y>
     <width>50</width>
+    <background_color>
+      <color name="GREEN" red="61" green="216" blue="61">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_39</name>
     <text>FWD</text>
-    <x>740</x>
-    <y>630</y>
+    <x>879</x>
+    <y>832</y>
     <width>50</width>
+    <foreground_color>
+      <color name="BLACK-TEXT" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO SHe supply from LHe plant and primary loop supply" red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_40</name>
     <text>RFL</text>
-    <x>740</x>
-    <y>663</y>
+    <x>879</x>
+    <y>865</y>
     <width>50</width>
+    <background_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_11</name>
     <pv_name> LLRF-Ctrl:InPwr:sRdV</pv_name>
-    <x>790</x>
-    <y>600</y>
+    <x>929</x>
+    <y>802</y>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_44</name>
-    <x>380</x>
-    <y>302</y>
+    <x>346</x>
+    <y>280</y>
     <width>40</width>
     <height>1</height>
     <points>
@@ -1300,127 +1287,9 @@
     </line_color>
     <arrows>2</arrows>
   </widget>
-  <widget type="group" version="3.0.0">
-    <name>Signal generator</name>
-    <x>470</x>
-    <y>560</y>
-    <width>230</width>
-    <height>149</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_66</name>
-      <class>GROUP</class>
-      <y>20</y>
-      <width>230</width>
-      <height>129</height>
-      <line_width>1</line_width>
-      <line_color use_class="true">
-        <color name="GROUP-BORDER" red="150" green="155" blue="151">
-        </color>
-      </line_color>
-      <background_color use_class="true">
-        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-        </color>
-      </background_color>
-      <corner_width>4</corner_width>
-      <corner_height>4</corner_height>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_67</name>
-      <width>230</width>
-      <height>30</height>
-      <line_width>0</line_width>
-      <background_color>
-        <color name="GROUP-BORDER" red="150" green="155" blue="151">
-        </color>
-      </background_color>
-      <corner_width>10</corner_width>
-      <corner_height>10</corner_height>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_68</name>
-      <y>20</y>
-      <width>230</width>
-      <height>10</height>
-      <line_width>0</line_width>
-      <background_color>
-        <color name="GROUP-BORDER" red="150" green="155" blue="151">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_41</name>
-      <class>GROUP-TITLE</class>
-      <text>Signal Generator</text>
-      <x>28</x>
-      <width>180</width>
-      <height use_class="true">30</height>
-      <font use_class="true">
-        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <foreground_color use_class="true">
-        <color name="GROUP-TEXT" red="25" green="25" blue="25">
-        </color>
-      </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <wrap_words use_class="true">false</wrap_words>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_4</name>
-      <actions>
-        <action type="open_display">
-          <file>C:\opt\epics\opi\bob\llrf-sigGen\agilent33220A.bob</file>
-          <target>window</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <text>Settings</text>
-      <x>139</x>
-      <y>99</y>
-      <width>71</width>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_12</name>
-      <pv_name>LLRF-1:FUNCGEN-1:FUNC</pv_name>
-      <x>28</x>
-      <y>40</y>
-      <width>101</width>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Boolean Button_11</name>
-      <pv_name>LLRF-1:FUNCGEN-1:OUT</pv_name>
-      <x>139</x>
-      <y>40</y>
-      <width>69</width>
-    </widget>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_46</name>
-    <x>370</x>
-    <y>609</y>
-    <height>1</height>
-    <points>
-      <point x="100.0" y="0.0">
-      </point>
-      <point x="0.0" y="1.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_47</name>
-    <x>912</x>
+    <x>769</x>
     <y>823</y>
     <width>20</width>
     <height>50</height>
@@ -1455,14 +1324,14 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_13</name>
     <pv_name> LLRF-Ctrl:FwdPwr:sRdV</pv_name>
-    <x>790</x>
-    <y>630</y>
+    <x>929</x>
+    <y>832</y>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_14</name>
     <pv_name> LLRF-Ctrl:ReflPwr:sRdV</pv_name>
-    <x>790</x>
-    <y>663</y>
+    <x>929</x>
+    <y>865</y>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_69</name>
@@ -1470,7 +1339,7 @@
     <x>20</x>
     <y>240</y>
     <width>90</width>
-    <height>677</height>
+    <height>660</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -1532,7 +1401,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_73</name>
     <class>GROUP</class>
-    <x>863</x>
+    <x>937</x>
     <y>435</y>
     <width>189</width>
     <line_width>1</line_width>
@@ -1548,7 +1417,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_74</name>
     <class>GROUP</class>
-    <x>581</x>
+    <x>655</x>
     <y>435</y>
     <width>61</width>
     <line_width>1</line_width>
@@ -1565,7 +1434,7 @@
     <name>Label_43</name>
     <class>GROUP-TITLE</class>
     <text>HNOSS</text>
-    <x>480</x>
+    <x>554</x>
     <y>220</y>
     <width>90</width>
     <height use_class="true">30</height>
@@ -1584,7 +1453,7 @@
   <widget type="picture" version="2.0.0">
     <name>Picture_2</name>
     <file>../../freia-symbols/images/Cavity_SS.png</file>
-    <x>560</x>
+    <x>634</x>
     <y>326</y>
     <width>100</width>
     <height>109</height>
@@ -1592,7 +1461,7 @@
   <widget type="picture" version="2.0.0">
     <name>Picture_3</name>
     <file>../../freia-symbols/images/Cavity_SS.png</file>
-    <x>968</x>
+    <x>1042</x>
     <y>326</y>
     <width>100</width>
     <height>109</height>
@@ -1600,7 +1469,7 @@
   <widget type="picture" version="2.0.0">
     <name>Picture_4</name>
     <file>../../freia-symbols/images/Cavity_SS.png</file>
-    <x>850</x>
+    <x>924</x>
     <y>326</y>
     <width>100</width>
     <height>109</height>
@@ -1608,7 +1477,7 @@
   </widget>
   <widget type="arc" version="2.0.0">
     <name>Arc_6</name>
-    <x>1140</x>
+    <x>1214</x>
     <y>220</y>
     <width>60</width>
     <height>276</height>
@@ -1627,26 +1496,26 @@
   <widget type="led" version="2.0.0">
     <name>LED_8</name>
     <pv_name> CstatH-Ctrl:Pos1:DUT</pv_name>
-    <x>570</x>
+    <x>644</x>
     <y>310</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_9</name>
     <pv_name> CstatH-Ctrl:Pos2A:DUT</pv_name>
-    <x>861</x>
+    <x>935</x>
     <y>310</y>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_10</name>
     <pv_name> CstatH-Ctrl:Pos2:DUT</pv_name>
-    <x>981</x>
+    <x>1055</x>
     <y>310</y>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_44</name>
     <class>HEADER3</class>
     <text>Cav 1</text>
-    <x>598</x>
+    <x>672</x>
     <y>306</y>
     <width>51</width>
     <height>25</height>
@@ -1661,260 +1530,13 @@
     <transparent use_class="true">true</transparent>
     <vertical_alignment>1</vertical_alignment>
   </widget>
-  <widget type="group" version="3.0.0">
-    <name>SEL control</name>
-    <x>140</x>
-    <y>207</y>
-    <width>230</width>
-    <height>710</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_76</name>
-      <class>GROUP</class>
-      <y>34</y>
-      <width>230</width>
-      <height>677</height>
-      <line_width>1</line_width>
-      <line_color use_class="true">
-        <color name="GROUP-BORDER" red="150" green="155" blue="151">
-        </color>
-      </line_color>
-      <background_color use_class="true">
-        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-        </color>
-      </background_color>
-      <corner_width>10</corner_width>
-      <corner_height>10</corner_height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_45</name>
-      <text>RF SW</text>
-      <x>50</x>
-      <y>633</y>
-      <width>50</width>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Boolean Button_12</name>
-      <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
-      <x>50</x>
-      <y>654</y>
-      <width>60</width>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_48</name>
-      <x>190</x>
-      <y>404</y>
-      <width>40</width>
-      <height>174</height>
-      <points>
-        <point x="40.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="0.0" y="174.0">
-        </point>
-      </points>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="GRAY-BORDER" red="121" green="121" blue="121">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_77</name>
-      <y>34</y>
-      <width>230</width>
-      <height>10</height>
-      <line_width>0</line_width>
-      <background_color>
-        <color name="GROUP-BORDER" red="150" green="155" blue="151">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_78</name>
-      <y>14</y>
-      <width>230</width>
-      <height>30</height>
-      <line_width>0</line_width>
-      <background_color>
-        <color name="GROUP-BORDER" red="150" green="155" blue="151">
-        </color>
-      </background_color>
-      <corner_width>10</corner_width>
-      <corner_height>10</corner_height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_46</name>
-      <class>GROUP-TITLE</class>
-      <text>SEL control box</text>
-      <x>10</x>
-      <y>14</y>
-      <width>210</width>
-      <height use_class="true">30</height>
-      <font use_class="true">
-        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <foreground_color use_class="true">
-        <color name="GROUP-TEXT" red="25" green="25" blue="25">
-        </color>
-      </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <wrap_words use_class="true">false</wrap_words>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Entry</name>
-      <pv_name>LLRF-Aux:ArduinoPMC:AO-00</pv_name>
-      <x>121</x>
-      <y>95</y>
-      <width>80</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_47</name>
-      <text>VCA Control:</text>
-      <x>30</x>
-      <y>95</y>
-      <width>91</width>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_50</name>
-      <y>74</y>
-      <width>230</width>
-      <height>1</height>
-      <points>
-        <point x="230.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_79</name>
-      <x>80</x>
-      <y>64</y>
-      <width>60</width>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="Background" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_51</name>
-      <x>102</x>
-      <y>51</y>
-      <width>19</width>
-      <height>41</height>
-      <points>
-        <point x="0.0" y="41.0">
-        </point>
-        <point x="19.0" y="0.0">
-        </point>
-      </points>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_5</name>
-      <actions>
-        <action type="open_display">
-          <file>C:\opt\epics\opi\bob\arduinoPMC\arduinoplc_top.bob</file>
-          <target>window</target>
-          <description>Open Display</description>
-        </action>
-      </actions>
-      <text>ArduinoPMC</text>
-      <x>102</x>
-      <y>138</y>
-      <width>101</width>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_6</name>
-      <symbols>
-        <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off.svg</symbol>
-      </symbols>
-      <x>173</x>
-      <y>568</y>
-      <width>38</width>
-      <height>30</height>
-      <tooltip>$(pv_name)
-$(pv_value)
-$(actions)</tooltip>
-    </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>Symbol_5</name>
-      <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
-      <symbols>
-        <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off-RED.svg</symbol>
-        <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch On-GREEN.svg</symbol>
-      </symbols>
-      <x>60</x>
-      <y>568</y>
-      <width>38</width>
-      <height>30</height>
-      <tooltip>$(pv_name)
-$(pv_value)
-$(actions)</tooltip>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_52</name>
-      <y>584</y>
-      <width>60</width>
-      <height>1</height>
-      <points>
-        <point x="60.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_49</name>
-      <x>92</x>
-      <y>583</y>
-      <width>80</width>
-      <height>1</height>
-      <points>
-        <point x="80.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-    </widget>
-  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_80</name>
     <class>GROUP</class>
-    <x>720</x>
+    <x>576</x>
     <y>750</y>
-    <width>140</width>
-    <height>167</height>
+    <width>124</width>
+    <height>150</height>
     <line_width>1</line_width>
     <line_color use_class="true">
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -1940,28 +1562,16 @@ $(actions)</tooltip>
     <x>140</x>
     <y>60</y>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_49</name>
-    <class>COMMENT</class>
-    <text>Some comment.</text>
-    <x>250</x>
-    <y>60</y>
-    <width>140</width>
-    <font>
-      <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
-      </font>
-    </font>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_53</name>
-    <x>1021</x>
-    <y>600</y>
-    <width>1</width>
-    <height>37</height>
+    <x>980</x>
+    <y>778</y>
+    <width>40</width>
+    <height>1</height>
     <points>
-      <point x="0.0" y="37.0">
-      </point>
       <point x="0.0" y="0.0">
+      </point>
+      <point x="40.0" y="0.0">
       </point>
     </points>
     <line_width>2</line_width>
@@ -1969,12 +1579,12 @@ $(actions)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_54</name>
-    <x>350</x>
+    <x>270</x>
     <y>790</y>
-    <width>670</width>
-    <height>2</height>
+    <width>830</width>
+    <height>1</height>
     <points>
-      <point x="670.0" y="2.0">
+      <point x="830.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
@@ -1987,7 +1597,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="ellipse" version="2.0.0">
     <name>Ellipse</name>
-    <x>891</x>
+    <x>748</x>
     <y>762</y>
     <width>60</width>
     <height>60</height>
@@ -2003,21 +1613,21 @@ $(actions)</tooltip>
   </widget>
   <widget type="arc" version="2.0.0">
     <name>Arc_7</name>
-    <x>890</x>
+    <x>747</x>
     <y>860</y>
     <width>1</width>
     <height>1</height>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_55</name>
-    <x>1021</x>
-    <y>650</y>
-    <width>1</width>
-    <height>37</height>
+    <x>880</x>
+    <y>779</y>
+    <width>39</width>
+    <height>1</height>
     <points>
-      <point x="0.0" y="0.0">
+      <point x="39.0" y="0.0">
       </point>
-      <point x="0.0" y="37.0">
+      <point x="0.0" y="0.0">
       </point>
     </points>
     <line_width>2</line_width>
@@ -2029,8 +1639,8 @@ $(actions)</tooltip>
   </widget>
   <widget type="polygon" version="2.0.0">
     <name>Polygon</name>
-    <x>776</x>
-    <y>769</y>
+    <x>623</x>
+    <y>768</y>
     <width>35</width>
     <height>43</height>
     <points>
@@ -2053,7 +1663,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_83</name>
-    <x>470</x>
+    <x>326</x>
     <y>730</y>
     <width>230</width>
     <height>30</height>
@@ -2067,7 +1677,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_84</name>
-    <x>470</x>
+    <x>326</x>
     <y>750</y>
     <width>230</width>
     <height>10</height>
@@ -2081,9 +1691,9 @@ $(actions)</tooltip>
     <name>Label_50</name>
     <class>GROUP-TITLE</class>
     <text>Step attenuator -70dB</text>
-    <x>480</x>
+    <x>326</x>
     <y>730</y>
-    <width>210</width>
+    <width>230</width>
     <height use_class="true">30</height>
     <font use_class="true">
       <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
@@ -2097,53 +1707,11 @@ $(actions)</tooltip>
     <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words use_class="true">false</wrap_words>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_51</name>
-    <text>+10dB</text>
-    <x>498</x>
-    <y>840</y>
-    <width>50</width>
-  </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button_13</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DO-00</pv_name>
-    <x>498</x>
-    <y>861</y>
-    <width>49</width>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_52</name>
-    <text>+20dB</text>
-    <x>564</x>
-    <y>840</y>
-    <width>50</width>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_53</name>
-    <text>+40dB</text>
-    <x>630</x>
-    <y>840</y>
-    <width>50</width>
-  </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button_14</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DO-01</pv_name>
-    <x>564</x>
-    <y>861</y>
-    <width>49</width>
-  </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button_15</name>
-    <pv_name>LLRF-Aux:ArduinoPMC:DO-02</pv_name>
-    <x>630</x>
-    <y>861</y>
-    <width>49</width>
-  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_85</name>
-    <x>720</x>
+    <x>576</x>
     <y>730</y>
-    <width>140</width>
+    <width>124</width>
     <height>30</height>
     <line_width>0</line_width>
     <background_color>
@@ -2155,9 +1723,9 @@ $(actions)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_86</name>
-    <x>720</x>
+    <x>576</x>
     <y>750</y>
-    <width>140</width>
+    <width>124</width>
     <height>10</height>
     <line_width>0</line_width>
     <background_color>
@@ -2169,9 +1737,9 @@ $(actions)</tooltip>
     <name>Label_54</name>
     <class>GROUP-TITLE</class>
     <text>SSPA</text>
-    <x>730</x>
+    <x>576</x>
     <y>730</y>
-    <width>120</width>
+    <width>124</width>
     <height use_class="true">30</height>
     <font use_class="true">
       <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
@@ -2188,16 +1756,16 @@ $(actions)</tooltip>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_16</name>
     <pv_name>LLRF-Aux:ArduinoPMC:DO-06</pv_name>
-    <x>740</x>
-    <y>861</y>
+    <x>587</x>
+    <y>842</y>
     <off_label>Disabled</off_label>
     <on_label>Enabled</on_label>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_87</name>
-    <x>720</x>
-    <y>560</y>
-    <width>230</width>
+    <x>859</x>
+    <y>730</y>
+    <width>187</width>
     <height>30</height>
     <line_width>0</line_width>
     <background_color>
@@ -2209,9 +1777,9 @@ $(actions)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_88</name>
-    <x>720</x>
-    <y>580</y>
-    <width>230</width>
+    <x>859</x>
+    <y>750</y>
+    <width>187</width>
     <height>10</height>
     <line_width>0</line_width>
     <background_color>
@@ -2221,7 +1789,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_65</name>
-    <x>549</x>
+    <x>405</x>
     <y>782</y>
     <width>60</width>
     <line_width>2</line_width>
@@ -2236,7 +1804,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_45</name>
-    <x>571</x>
+    <x>427</x>
     <y>771</y>
     <width>19</width>
     <height>41</height>
@@ -2253,18 +1821,1029 @@ $(actions)</tooltip>
     </line_color>
     <arrows>2</arrows>
   </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_55</name>
+    <text>Trig</text>
+    <x>70</x>
+    <y>670</y>
+    <width>30</width>
+    <height>19</height>
+  </widget>
   <widget type="polyline" version="2.0.0">
-    <name>Polyline_34</name>
-    <x>110</x>
-    <y>610</y>
-    <width>220</width>
+    <name>Polyline_56</name>
+    <x>1142</x>
+    <y>381</y>
+    <width>174</width>
+    <height>115</height>
+    <points>
+      <point x="174.0" y="115.0">
+      </point>
+      <point x="174.0" y="0.0">
+      </point>
+      <point x="81.88235294117646" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_7</name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump.svg</symbol>
+    </symbols>
+    <x>1286</x>
+    <y>496</y>
+    <width>60</width>
+    <height>59</height>
+    <rotation>90.0</rotation>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_151</name>
+    <pv_name>CstatH-Vac:PT020:PrsR</pv_name>
+    <x>1283</x>
+    <y>343</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_138</name>
+    <text>PT020 (Pe)</text>
+    <x>1283</x>
+    <y>323</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_152</name>
+    <pv_name>CstatH-Vac:PT022:PrsR</pv_name>
+    <x>1346</x>
+    <y>418</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_139</name>
+    <text>PT022 (Pe)</text>
+    <x>1346</x>
+    <y>398</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_153</name>
+    <pv_name>CstatH-Vac:PT023:PrsR</pv_name>
+    <x>1346</x>
+    <y>455</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_140</name>
+    <text>PT023 (Pi)</text>
+    <x>1346</x>
+    <y>435</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_8</name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/valve_general.svg</symbol>
+    </symbols>
+    <x>1301</x>
+    <y>394</y>
+    <width>30</width>
+    <height>20</height>
+    <rotation>90.0</rotation>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_58</name>
+    <x>1316</x>
+    <y>360</y>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_59</name>
+    <x>1316</x>
+    <y>427</y>
+    <width>30</width>
     <height>1</height>
     <points>
-      <point x="220.0" y="0.0">
+      <point x="0.0" y="0.0">
       </point>
-      <point x="105.0" y="0.5">
+      <point x="30.0" y="0.0">
       </point>
-      <point x="0.0" y="1.0">
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_60</name>
+    <x>1316</x>
+    <y>462</y>
+    <width>30</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_9</name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump.svg</symbol>
+    </symbols>
+    <x>436</x>
+    <y>498</y>
+    <width>60</width>
+    <height>59</height>
+    <rotation>90.0</rotation>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_154</name>
+    <pv_name>CstatH-Vac:PT024:PrsR</pv_name>
+    <x>433</x>
+    <y>345</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_141</name>
+    <text>PT024 (Pe)</text>
+    <x>433</x>
+    <y>325</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_155</name>
+    <pv_name>CstatH-Vac:PT026:PrsR</pv_name>
+    <x>370</x>
+    <y>418</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_142</name>
+    <text>PT026 (Pe)</text>
+    <x>370</x>
+    <y>398</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_156</name>
+    <pv_name>CstatH-Vac:PT027:PrsR</pv_name>
+    <x>370</x>
+    <y>455</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_143</name>
+    <text>PT027 (Pi)</text>
+    <x>370</x>
+    <y>435</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_61</name>
+    <x>466</x>
+    <y>362</y>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_62</name>
+    <x>436</x>
+    <y>427</y>
+    <width>30</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_63</name>
+    <x>436</x>
+    <y>462</y>
+    <width>30</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_67</name>
+    <x>466</x>
+    <y>380</y>
+    <width>170</width>
+    <height>118</height>
+    <points>
+      <point x="170.0" y="0.0">
+      </point>
+      <point x="79.33333333333333" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="118.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_10</name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/valve_general.svg</symbol>
+    </symbols>
+    <x>451</x>
+    <y>393</y>
+    <width>30</width>
+    <height>20</height>
+    <rotation>90.0</rotation>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_67</name>
+    <x>326</x>
+    <y>627</y>
+    <width>374</width>
+    <height>30</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_12</name>
+    <pv_name>LLRF-1:FUNCGEN-1:FUNC</pv_name>
+    <x>336</x>
+    <y>663</y>
+    <width>114</width>
+    <height>30</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_11</name>
+    <pv_name>LLRF-1:FUNCGEN-1:OUT</pv_name>
+    <x>465</x>
+    <y>663</y>
+    <width>69</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_41</name>
+    <class>GROUP-TITLE</class>
+    <text>Signal Generator</text>
+    <x>326</x>
+    <y>627</y>
+    <width>190</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="GROUP-TEXT" red="25" green="25" blue="25">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_37</name>
+    <class>GROUP-TITLE</class>
+    <text>RF Power meters</text>
+    <x>859</x>
+    <y>730</y>
+    <width>187</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="GROUP-TEXT" red="25" green="25" blue="25">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>568</x>
+    <y>663</y>
+    <width>122</width>
+    <height>30</height>
+    <line_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <name>Slide Button_1</name>
+    <pv_name>LLRF-1:FUNCGEN-1:Mode:cPls</pv_name>
+    <label></label>
+    <x>601</x>
+    <y>668</y>
+    <width>48</width>
+    <height>18</height>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="ORANGE" red="254" green="194" blue="81">
+      </color>
+    </on_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>CW</text>
+    <x>566</x>
+    <y>667</y>
+    <width>28</width>
+    <height>13</height>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Pulse</text>
+    <x>649</x>
+    <y>668</y>
+    <width>41</width>
+    <height>13</height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>336</x>
+    <y>822</y>
+    <width>210</width>
+    <height>60</height>
+    <line_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_51</name>
+    <text>+10dB</text>
+    <x>354</x>
+    <y>822</y>
+    <width>50</width>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_13</name>
+    <pv_name>LLRF-Aux:ArduinoPMC:DO-00</pv_name>
+    <x>354</x>
+    <y>843</y>
+    <width>49</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_52</name>
+    <text>+20dB</text>
+    <x>420</x>
+    <y>822</y>
+    <width>50</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_53</name>
+    <text>+40dB</text>
+    <x>486</x>
+    <y>822</y>
+    <width>50</width>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_14</name>
+    <pv_name>LLRF-Aux:ArduinoPMC:DO-01</pv_name>
+    <x>420</x>
+    <y>843</y>
+    <width>49</width>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_15</name>
+    <pv_name>LLRF-Aux:ArduinoPMC:DO-02</pv_name>
+    <x>486</x>
+    <y>843</y>
+    <width>49</width>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Tank_1</name>
+    <pv_name>CstatH-LHe:LT101:sRdV</pv_name>
+    <x>746</x>
+    <y>306</y>
+    <width>42</width>
+    <height>145</height>
+    <background_color>
+      <color red="230" green="235" blue="232" alpha="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_76</name>
+    <class>GROUP</class>
+    <x>140</x>
+    <y>241</y>
+    <width>156</width>
+    <height>659</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <x>150</x>
+    <y>260</y>
+    <width>130</width>
+    <height>111</height>
+    <line_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_48</name>
+    <x>257</x>
+    <y>680</y>
+    <width>35</width>
+    <height>95</height>
+    <points>
+      <point x="35.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="95.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_77</name>
+    <x>140</x>
+    <y>241</y>
+    <width>156</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_78</name>
+    <x>140</x>
+    <y>221</y>
+    <width>156</width>
+    <height>30</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_46</name>
+    <class>GROUP-TITLE</class>
+    <text>SEL box</text>
+    <x>140</x>
+    <y>221</y>
+    <width>156</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="GROUP-TEXT" red="25" green="25" blue="25">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>LLRF-Aux:ArduinoPMC:AO-00</pv_name>
+    <x>170</x>
+    <y>331</y>
+    <width>80</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_47</name>
+    <text>VCA Control:</text>
+    <x>170</x>
+    <y>311</y>
+    <width>91</width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_50</name>
+    <x>140</x>
+    <y>290</y>
+    <width>160</width>
+    <height>1</height>
+    <points>
+      <point x="160.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>150</x>
+    <y>760</y>
+    <width>82</width>
+    <height>122</height>
+    <line_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_79</name>
+    <x>186</x>
+    <y>280</y>
+    <width>60</width>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_51</name>
+    <x>208</x>
+    <y>267</y>
+    <width>19</width>
+    <height>41</height>
+    <points>
+      <point x="0.0" y="41.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_6</name>
+    <symbols>
+      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off.svg</symbol>
+    </symbols>
+    <x>237</x>
+    <y>775</y>
+    <width>38</width>
+    <height>30</height>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_5</name>
+    <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
+    <symbols>
+      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off-RED.svg</symbol>
+      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch On-GREEN.svg</symbol>
+    </symbols>
+    <x>170</x>
+    <y>775</y>
+    <width>38</width>
+    <height>30</height>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_52</name>
+    <x>140</x>
+    <y>790</y>
+    <width>30</width>
+    <height>1</height>
+    <points>
+      <point x="30.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_49</name>
+    <x>200</x>
+    <y>790</y>
+    <width>40</width>
+    <height>1</height>
+    <points>
+      <point x="40.0" y="1.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_45</name>
+    <text>RF SW</text>
+    <x>159</x>
+    <y>822</y>
+    <width>50</width>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_12</name>
+    <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
+    <x>159</x>
+    <y>843</y>
+    <width>60</width>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_36</name>
+    <x>276</x>
+    <y>790</y>
+    <width>19</width>
+    <height>1</height>
+    <points>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_46</name>
+    <x>110</x>
+    <y>680</y>
+    <width>210</width>
+    <height>1</height>
+    <points>
+      <point x="210.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
       </point>
     </points>
     <line_width>2</line_width>
@@ -2275,11 +2854,47 @@ $(actions)</tooltip>
     <arrows>2</arrows>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_55</name>
-    <text>Trig</text>
+    <name>Label_56</name>
+    <text>AI0</text>
     <x>70</x>
-    <y>601</y>
+    <y>280</y>
     <width>30</width>
     <height>19</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_57</name>
+    <text>AO0</text>
+    <x>70</x>
+    <y>781</y>
+    <width>30</width>
+    <height>19</height>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_11</name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/valve_general.svg</symbol>
+    </symbols>
+    <x>1301</x>
+    <y>472</y>
+    <width>30</width>
+    <height>20</height>
+    <rotation>90.0</rotation>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_12</name>
+    <symbols>
+      <symbol>../../freia-symbols/cryogenics/valve_general.svg</symbol>
+    </symbols>
+    <x>451</x>
+    <y>473</y>
+    <width>30</width>
+    <height>20</height>
+    <rotation>90.0</rotation>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
   </widget>
 </display>
