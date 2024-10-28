@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-28 15:44:16 by freiaop-->
+<!--Saved on 2024-10-28 17:15:21 by konrad-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1610</width>
@@ -785,7 +785,7 @@
     <pv_name>CstatH-RHtr:FT550:sRdV</pv_name>
     <x>1084</x>
     <y>118</y>
-    <width>66</width>
+    <width>80</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -1869,7 +1869,7 @@ $(actions)</tooltip>
     <pv_name>CstatH-Vac:PT020:PrsR</pv_name>
     <x>1283</x>
     <y>343</y>
-    <width>66</width>
+    <width>75</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -1883,7 +1883,8 @@ $(actions)</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <precision>2</precision>
+    <format>2</format>
+    <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -1925,7 +1926,7 @@ $(actions)</tooltip>
     <pv_name>CstatH-Vac:PT022:PrsR</pv_name>
     <x>1346</x>
     <y>418</y>
-    <width>66</width>
+    <width>75</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -1939,7 +1940,8 @@ $(actions)</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <precision>2</precision>
+    <format>2</format>
+    <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -1981,7 +1983,7 @@ $(actions)</tooltip>
     <pv_name>CstatH-Vac:PT023:PrsR</pv_name>
     <x>1346</x>
     <y>455</y>
-    <width>66</width>
+    <width>75</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -1995,7 +1997,7 @@ $(actions)</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <precision>2</precision>
+    <precision>0</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -2115,7 +2117,7 @@ $(actions)</tooltip>
     <pv_name>CstatH-Vac:PT024:PrsR</pv_name>
     <x>433</x>
     <y>345</y>
-    <width>66</width>
+    <width>75</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -2129,7 +2131,8 @@ $(actions)</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <precision>2</precision>
+    <format>2</format>
+    <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -2169,9 +2172,9 @@ $(actions)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_155</name>
     <pv_name>CstatH-Vac:PT026:PrsR</pv_name>
-    <x>370</x>
+    <x>362</x>
     <y>418</y>
-    <width>66</width>
+    <width>75</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -2185,7 +2188,8 @@ $(actions)</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <precision>2</precision>
+    <format>2</format>
+    <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -2198,7 +2202,7 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_142</name>
     <text>PT026 (Pe)</text>
-    <x>370</x>
+    <x>362</x>
     <y>398</y>
     <width>66</width>
     <height>18</height>
@@ -2225,9 +2229,9 @@ $(actions)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_156</name>
     <pv_name>CstatH-Vac:PT027:PrsR</pv_name>
-    <x>370</x>
+    <x>362</x>
     <y>455</y>
-    <width>66</width>
+    <width>75</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -2241,7 +2245,7 @@ $(actions)</tooltip>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <precision>2</precision>
+    <precision>0</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -2254,7 +2258,7 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_143</name>
     <text>PT027 (Pi)</text>
-    <x>370</x>
+    <x>362</x>
     <y>435</y>
     <width>66</width>
     <height>18</height>
@@ -2743,8 +2747,9 @@ $(actions)</tooltip>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Symbol_6</name>
+    <pv_name>sim://const(0)</pv_name>
     <symbols>
-      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off.svg</symbol>
+      <symbol>../../freia-symbols/electronics/JS Disconnecting Switch Off.svg</symbol>
     </symbols>
     <x>237</x>
     <y>775</y>
@@ -2758,8 +2763,8 @@ $(actions)</tooltip>
     <name>Symbol_5</name>
     <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
     <symbols>
-      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off-RED.svg</symbol>
-      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch On-GREEN.svg</symbol>
+      <symbol>../../freia-symbols/electronics/JS Disconnecting Switch Off-RED.svg</symbol>
+      <symbol>../../freia-symbols/electronics/JS Disconnecting Switch On-GREEN.svg</symbol>
     </symbols>
     <x>170</x>
     <y>775</y>
