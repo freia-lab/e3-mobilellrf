@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-28 15:44:16 by freiaop-->
+<!--Saved on 2024-10-28 15:54:33 by freiaop-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1610</width>
@@ -2758,8 +2758,8 @@ $(actions)</tooltip>
     <name>Symbol_5</name>
     <pv_name>LLRF-Aux:ArduinoPMC:DO-07</pv_name>
     <symbols>
-      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch Off-RED.svg</symbol>
-      <symbol>C:\opt\epics\opi\bob\freia-symbols-\electronics\JS Disconnecting Switch On-GREEN.svg</symbol>
+      <symbol>../../freia-symbols/electronics/JS Disconnecting Switch Off-RED.svg</symbol>
+      <symbol>../../freia-symbols/electronics/JS Disconnecting Switch On-GREEN.svg</symbol>
     </symbols>
     <x>170</x>
     <y>775</y>
