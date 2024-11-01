@@ -9,11 +9,18 @@ file "cav-pos.template" { pattern
 }
 
 file "cav-selector.template" { pattern 
-{P}
-{$(PCAV)}
+{P       PA}
+{$(PCAV) $(PLC)}
 }
 
 file "rfmode-selector.template" { pattern
 {P}
 {$(PRF)}
 }
+
+file "aliases.template" { pattern
+{PA  	PL}
+{$(PLC)	$(PCAV)}
+}
+
+

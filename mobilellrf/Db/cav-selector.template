@@ -1,7 +1,7 @@
 record(calc, "$(P)Connected:Position-HDW") {
-    field(INPA, "LLRF-Aux:ArduinoPMC:DI-00")
-    field(INPB, "LLRF-Aux:ArduinoPMC:DI-01")
-    field(INPC, "LLRF-Aux:ArduinoPMC:DI-02")
+    field(INPA, "$(PA)DI-00")
+    field(INPB, "$(PA)DI-01")
+    field(INPC, "$(PA)DI-02")
     field(CALC, "D=0?C*4+B*2+A:E")
     field(SDIS, "$(P)Connected:Position-SIM MS")
     field(DISV, "-1")
@@ -72,4 +72,13 @@ record(ao, "$(P)InPwr:sRdV") {
    field (PREC, "1")
    field (LOPR, "0")
    field (HOPR, "350")
+}
+
+record(calc, "$(P)Attenuation") {
+    field(INPA, "$(PA)DO-00")
+    field(INPB, "$(PA)DO-01")
+    field(INPC, "$(PA)DO-02")
+    field(CALC, "C*40+B*20+A*10")
+    field(EGU, "dB")
+    field(SCAN, "1 second")
 }

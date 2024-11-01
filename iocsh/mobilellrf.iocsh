@@ -24,5 +24,5 @@
 
 iocshLoad("$(agilent33220a_DIR)agilent33220a.iocsh", "IP=$(IP_ADDR1),P=$(PREFIX1),DEV=$(DEVICE1=FUNCGEN-1),ASYN_PORT=$(ASYN_PORT1)")
 iocshLoad("$(arduinoplc_DIR)arduinoplc.iocsh", "IP_ADDR=$(IP_ADDR2),ASYN_PORT=$(ASYN_PORT2),TOP=$(TOP),PREFIX=$(PREFIX2),DEV_NAME=$(DEVICE2=ArduinoPMC:)")
-dbLoadRecords("mobilellrf.db", "PCAV=$(PREFIX3),PRF=$(PREFIX1)$(DEVICE1)")
+dbLoadRecords("mobilellrf.db", "PCAV=$(PREFIX3),PRF=$(PREFIX1)$(DEVICE1=FUNCGEN-1),PLC=$(PREFIX2)$(DEVICE2=ArduinoPMC:)")
 dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT=$(ASYN_PORT1),ADDR='0',IMAX='1024',OMAX='256'")

@@ -1,0 +1,2 @@
+alias("$(PA)DO-06", "$(PL)SSAenable:cOn")
+alias("$(PA)DO-07", "$(PL)RFswitch:cOn")
