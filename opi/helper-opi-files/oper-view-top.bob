@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-28 17:15:21 by konrad-->
+<!--Saved on 2024-11-04 08:54:05 by freiaop-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1610</width>
@@ -115,7 +115,7 @@
     <class>GROUP</class>
     <x>874</x>
     <y>90</y>
-    <width>191</width>
+    <width>179</width>
     <height>116</height>
     <line_width>1</line_width>
     <line_color use_class="true">
@@ -979,8 +979,8 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_37</name>
-    <x>544</x>
-    <y>206</y>
+    <x>428</x>
+    <y>230</y>
     <width>40</width>
     <height>1</height>
     <points>
@@ -998,8 +998,8 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_38</name>
-    <x>1208</x>
-    <y>206</y>
+    <x>1318</x>
+    <y>230</y>
     <width>37</width>
     <height>1</height>
     <points>
@@ -1018,8 +1018,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_31</name>
     <text> to CM</text>
-    <x>1164</x>
-    <y>196</y>
+    <x>1274</x>
+    <y>220</y>
     <width>54</width>
     <height>26</height>
     <foreground_color>
@@ -1030,8 +1030,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_32</name>
     <text> to maise</text>
-    <x>584</x>
-    <y>196</y>
+    <x>468</x>
+    <y>220</y>
     <width>71</width>
     <height>26</height>
     <foreground_color>
@@ -2901,5 +2901,151 @@ $(actions)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)
 $(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_157</name>
+    <pv_name>CstatH-Vac:PT003:sRdV</pv_name>
+    <x>1164</x>
+    <y>190</y>
+    <width>75</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <format>2</format>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_144</name>
+    <text>PT003 (Pe)</text>
+    <x>1164</x>
+    <y>170</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_145</name>
+    <text>PT004 (Pi)</text>
+    <x>1069</x>
+    <y>170</y>
+    <width>66</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_158</name>
+    <pv_name>CstatH-Vac:PT004:sRdV</pv_name>
+    <x>1069</x>
+    <y>190</y>
+    <width>75</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_64</name>
+    <x>1144</x>
+    <y>200</y>
+    <width>20</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_65</name>
+    <x>1154</x>
+    <y>200</y>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
   </widget>
 </display>
