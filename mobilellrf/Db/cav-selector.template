@@ -74,6 +74,32 @@ record(ao, "$(P)InPwr:sRdV") {
    field (HOPR, "350")
 }
 
+record(ao, "$(P)SEL-Fc:sRdV") {
+   field (DESC, "SEL center freq from LabView")
+   field (EGU, "MHz")
+   field (DTYP, "Soft Channel")
+   field (PREC, "6")
+   field (LOPR, "0")
+   field (HOPR, "400")
+}
+
+record(ao, "$(P)Q0:sRdV") {
+   field (DESC, "Q0 from LabView")
+   field (DTYP, "Soft Channel")
+   field (PREC, "1")
+   field (LOPR, "0")
+   field (HOPR, "1e11")
+}
+
+record(ao, "$(P)Eacc:sRdV") {
+   field (DESC, "El. field from LabView")
+   field (EGU, "MV/m")
+   field (DTYP, "Soft Channel")
+   field (PREC, "3")
+   field (LOPR, "0")
+   field (HOPR, "14")
+}
+
 record(calc, "$(P)Attenuation") {
     field(INPA, "$(PA)DO-00")
     field(INPB, "$(PA)DO-01")

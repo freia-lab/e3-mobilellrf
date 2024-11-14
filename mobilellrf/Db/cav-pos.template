@@ -13,6 +13,7 @@ record(calc, Cstat$(CS)-Ctrl:Pos$(POS):DUT) {
 record(calc, $(P)Cstat$(CS)-Pos$(POS):FwdPwr) {
   field(SCAN, "1 second")
   field(EGU, "W")
+  field(PREC,"1")
   field(INPA, "$(P)Connected:Position PP MS")
   field(INPB, "$(P)FwdPwr:sRdV")
   field(CALC, "A=$(ENCODED_POS)?B:0")
@@ -20,6 +21,7 @@ record(calc, $(P)Cstat$(CS)-Pos$(POS):FwdPwr) {
 record(calc, $(P)Cstat$(CS)-Pos$(POS):ReflPwr) {
   field(SCAN, "1 second")
   field(EGU, "W")
+  field(PREC,"1")
   field(INPA, "$(P)Connected:Position PP MS")
   field(INPB, "$(P)ReflPwr:sRdV")
   field(CALC, "A=$(ENCODED_POS)?B:0")
@@ -27,8 +29,33 @@ record(calc, $(P)Cstat$(CS)-Pos$(POS):ReflPwr) {
 record(calc, $(P)Cstat$(CS)-Pos$(POS):InPwr) {
   field(SCAN, "1 second")
   field(EGU, "W")
+  field(PREC,"1")
   field(INPA, "$(P)Connected:Position PP MS")
   field(INPB, "$(P)InPwr:sRdV")
   field(CALC, "A=$(ENCODED_POS)?B:0")
 }
 
+record(calc, $(P)Cstat$(CS)-Pos$(POS):SEL-Fc) {
+  field(SCAN, "1 second")
+  field(EGU, "MHz")
+  field(PREC,"5")
+  field(INPA, "$(P)Connected:Position PP MS")
+  field(INPB, "$(P)SEL-Fc:sRdV")
+  field(CALC, "A=$(ENCODED_POS)?B:0")
+}
+record(calc, $(P)Cstat$(CS)-Pos$(POS):Q0) {
+  field(SCAN, "1 second")
+  field(EGU, "")
+  field(PREC,"1")
+  field(INPA, "$(P)Connected:Position PP MS")
+  field(INPB, "$(P)Q0:sRdV")
+  field(CALC, "A=$(ENCODED_POS)?B:0")
+}
+record(calc, $(P)Cstat$(CS)-Pos$(POS):Eacc) {
+  field(SCAN, "1 second")
+  field(EGU, "MV/m")
+  field(PREC,"3")
+  field(INPA, "$(P)Connected:Position PP MS")
+  field(INPB, "$(P)Eacc:sRdV")
+  field(CALC, "A=$(ENCODED_POS)?B:0")
+}

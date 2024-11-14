@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-11-14 11:56:44 by konrad-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>1100</width>
+  <height>26</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>=concat(`$(P)$(D):sRdV.DESC`, " [",`$(P)$(D):sRdV.EGU`,"]")</pv_name>
+    <x>3</x>
+    <y>3</y>
+    <width>260</width>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(D):sRdV</pv_name>
+    <x>260</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)CstatH-Pos1:$(D)</pv_name>
+    <x>380</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P)CstatH-Pos2:$(D)</pv_name>
+    <x>500</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P)CstatH-Pos2A:$(D)</pv_name>
+    <x>620</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(P)CstatV-Pos1:$(D)</pv_name>
+    <x>750</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>$(P)CstatV-Pos2:$(D)</pv_name>
+    <x>870</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(P)CstatV-Pos3:$(D)</pv_name>
+    <x>990</x>
+    <y>3</y>
+    <show_units>false</show_units>
+  </widget>
+</display>
