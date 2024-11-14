@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-14 14:45:54 by konrad-->
+<!--Saved on 2024-11-14 14:57:58 by konrad-->
 <display version="2.0.0">
   <name>eng-view</name>
   <width>1610</width>
@@ -206,6 +206,16 @@ pulsed mode, output disabled</tooltip>
                 <pv_name>$(pv_name)</pv_name>
               </rule>
             </rules>
+            <widget type="label" version="2.0.0">
+              <name>Label_5</name>
+              <text>Pos$(POS)</text>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
           </widget>
           <widget type="group" version="3.0.0">
             <name>Group_1</name>
@@ -241,6 +251,16 @@ pulsed mode, output disabled</tooltip>
                 <pv_name>$(pv_name)</pv_name>
               </rule>
             </rules>
+            <widget type="label" version="2.0.0">
+              <name>Label_6</name>
+              <text>Pos$(POS)</text>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
           </widget>
           <widget type="group" version="3.0.0">
             <name>Group_2</name>
@@ -276,6 +296,16 @@ pulsed mode, output disabled</tooltip>
                 <pv_name>$(pv_name)</pv_name>
               </rule>
             </rules>
+            <widget type="label" version="2.0.0">
+              <name>Label_7</name>
+              <text>Pos$(POS)</text>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
           </widget>
           <widget type="group" version="3.0.0">
             <name>Group_4</name>
@@ -311,6 +341,16 @@ pulsed mode, output disabled</tooltip>
                 <pv_name>$(pv_name)</pv_name>
               </rule>
             </rules>
+            <widget type="label" version="2.0.0">
+              <name>Label_9</name>
+              <text>Pos$(POS)</text>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
           </widget>
           <widget type="group" version="3.0.0">
             <name>Group_5</name>
@@ -346,6 +386,16 @@ pulsed mode, output disabled</tooltip>
                 <pv_name>$(pv_name)</pv_name>
               </rule>
             </rules>
+            <widget type="label" version="2.0.0">
+              <name>Label_10</name>
+              <text>Pos$(POS)</text>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
           </widget>
           <widget type="group" version="3.0.0">
             <name>Group_6</name>
@@ -381,6 +431,16 @@ pulsed mode, output disabled</tooltip>
                 <pv_name>$(pv_name)</pv_name>
               </rule>
             </rules>
+            <widget type="label" version="2.0.0">
+              <name>Label_11</name>
+              <text>Pos$(POS)</text>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
+              <vertical_alignment>1</vertical_alignment>
+            </widget>
           </widget>
           <widget type="rectangle" version="2.0.0">
             <name>Rectangle_1</name>
@@ -412,83 +472,10 @@ pulsed mode, output disabled</tooltip>
             <corner_width>20</corner_width>
             <corner_height>20</corner_height>
           </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_5</name>
-            <text>Pos$(POS)</text>
-            <x>384</x>
-            <y>54</y>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_6</name>
-            <text>Pos$(POS)</text>
-            <x>504</x>
-            <y>54</y>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_7</name>
-            <text>Pos$(POS)</text>
-            <x>624</x>
-            <y>54</y>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_9</name>
-            <text>Pos$(POS)</text>
-            <x>754</x>
-            <y>54</y>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_10</name>
-            <text>Pos$(POS)</text>
-            <x>874</x>
-            <y>54</y>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-          </widget>
-          <widget type="label" version="2.0.0">
-            <name>Label_11</name>
-            <text>Pos$(POS)</text>
-            <x>994</x>
-            <y>54</y>
-            <font>
-              <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-              </font>
-            </font>
-            <horizontal_alignment>1</horizontal_alignment>
-            <vertical_alignment>1</vertical_alignment>
-          </widget>
         </children>
       </tab>
     </tabs>
     <width>1610</width>
     <height>930</height>
-    <active_tab>2</active_tab>
   </widget>
 </display>
