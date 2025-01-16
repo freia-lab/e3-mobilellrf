@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-21 17:25:23 by freiaop-->
+<!--Saved on 2025-01-16 14:51:36 by freiaop-->
 <display version="2.0.0">
   <name>oper-view</name>
   <width>1610</width>
@@ -464,9 +464,9 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_62</name>
     <class>GROUP-RED</class>
-    <x>554</x>
-    <y>199</y>
-    <width>278</width>
+    <x>808</x>
+    <y>560</y>
+    <width>206</width>
     <height>40</height>
     <line_width>1</line_width>
     <line_color use_class="true">
@@ -483,8 +483,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
     <pv_name>RadProt-Bunker1:GD-02:sDoseRt</pv_name>
-    <x>718</x>
-    <y>209</y>
+    <x>907</x>
+    <y>570</y>
     <width>101</width>
   </widget>
   <widget type="label" version="2.0.0">
@@ -825,10 +825,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_29</name>
-    <text>GD02 (Inside bunker):</text>
-    <x>564</x>
-    <y>209</y>
-    <width>161</width>
+    <text>GD02 (ION):</text>
+    <x>818</x>
+    <y>570</y>
+    <width>89</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_130</name>
@@ -1056,8 +1056,8 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_37</name>
-    <x>428</x>
-    <y>259</y>
+    <x>568</x>
+    <y>501</y>
     <width>40</width>
     <height>1</height>
     <points>
@@ -1075,8 +1075,8 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_38</name>
-    <x>1318</x>
-    <y>259</y>
+    <x>1186</x>
+    <y>501</y>
     <width>37</width>
     <height>1</height>
     <points>
@@ -1095,8 +1095,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_31</name>
     <text> to CM</text>
-    <x>1274</x>
-    <y>249</y>
+    <x>1142</x>
+    <y>491</y>
     <width>54</width>
     <height>26</height>
     <foreground_color>
@@ -1107,8 +1107,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_32</name>
     <text> to maise</text>
-    <x>468</x>
-    <y>249</y>
+    <x>608</x>
+    <y>491</y>
     <width>71</width>
     <height>26</height>
     <foreground_color>
@@ -3860,7 +3860,7 @@ $(actions)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_17</name>
     <pv_name>LLRF-Ctrl:SEL-Fc:sRdV</pv_name>
-    <x>1194</x>
+    <x>1189</x>
     <y>772</y>
     <width>139</width>
     <height>26</height>
@@ -3887,5 +3887,143 @@ $(actions)</tooltip>
       <color name="BLACK-BORDER" red="121" green="121" blue="121">
       </color>
     </line_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_100</name>
+    <class>GROUP-RED</class>
+    <x>1390</x>
+    <y>362</y>
+    <width>116</width>
+    <height>50</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_30</name>
+    <text>GD03:</text>
+    <x>1400</x>
+    <y>362</y>
+    <width>67</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>RadProt-Aux:GD-03:sDoseRt</pv_name>
+    <x>1400</x>
+    <y>382</y>
+    <width>101</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>Cryo-Rec:LP:C4:GlobStat</pv_name>
+    <x>1460</x>
+    <y>240</y>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_102</name>
+    <class>GROUP-RED</class>
+    <x>300</x>
+    <y>354</y>
+    <width>116</width>
+    <height>50</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_69</name>
+    <text>GD02:</text>
+    <x>310</x>
+    <y>354</y>
+    <width>67</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_18</name>
+    <pv_name>RadProt-Aux:GD-02:sDoseRt</pv_name>
+    <x>310</x>
+    <y>374</y>
+    <width>101</width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_103</name>
+    <class>GROUP-RED</class>
+    <x>730</x>
+    <y>192</y>
+    <width>116</width>
+    <height>50</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_70</name>
+    <text>GD01 (ION):</text>
+    <x>740</x>
+    <y>192</y>
+    <width>106</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_19</name>
+    <pv_name>RadProt-Aux:GD-01:sDoseRt</pv_name>
+    <x>740</x>
+    <y>212</y>
+    <width>101</width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_104</name>
+    <class>GROUP-RED</class>
+    <x>310</x>
+    <y>192</y>
+    <width>116</width>
+    <height>50</height>
+    <line_width>1</line_width>
+    <line_color use_class="true">
+      <color name="RED-GROUP-BORDER" red="167" green="134" blue="130">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="RED-GROUP-BACKGROUND" red="208" green="175" blue="172">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_71</name>
+    <text>GD00 (DPU):</text>
+    <x>320</x>
+    <y>192</y>
+    <width>106</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_20</name>
+    <pv_name>RadProt-Aux:GD-00:sDoseRt</pv_name>
+    <x>320</x>
+    <y>212</y>
+    <width>101</width>
   </widget>
 </display>
