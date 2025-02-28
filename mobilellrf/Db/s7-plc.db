@@ -1,0 +1,24 @@
+record (bi, "$(PREFIX)-Ctrl:s7-status") {
+  field (DTYP, "S7plc stat")
+  field (INP,  "@$(ASYN_PORT)")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "disconnected")
+  field (ONAM, "connected")
+  field (ZSV,  "MAJOR")
+  field (FLNK, "$(PREFIX)-Ctrl:s7-status-counter")
+}
+
+record (calc, "$(PREFIX)-Ctrl:s7-status-counter")
+{
+   field (INPA, "$(PREFIX)-Ctrl:s7-status-counter")
+   field (CALC, "A+1")
+   field (FLNK, "$(PREFIX)-Ctrl:s7-disconnect-counter")
+}
+
+record (calc, "$(PREFIX)-Ctrl:s7-disconnect-counter")
+{
+   field (INPA, "$(PREFIX)-Ctrl:s7-status")
+   field (INPB, "$(PREFIX)-Ctrl:s7-disconnect-counter.LA")
+   field (INPC, "$(PREFIX)-Ctrl:s7-disconnect-counter")
+   field (CALC, "(A=0&&B=1)?C+1:C")
+}
