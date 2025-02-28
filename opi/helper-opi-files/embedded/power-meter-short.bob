@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-02-28 15:05:21 by konrad-->
+<!--Saved on 2025-02-28 14:59:41 by konrad-->
 <display version="2.0.0">
   <name>Display</name>
   <width>1200</width>
@@ -10,48 +10,6 @@
     <x>360</x>
     <y>3</y>
     <height>22</height>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_3</name>
-    <pv_name>$(P)CstatH-Pos1:$(D)</pv_name>
-    <x>480</x>
-    <y>3</y>
-    <show_units>false</show_units>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_4</name>
-    <pv_name>$(P)CstatH-Pos2:$(D)</pv_name>
-    <x>600</x>
-    <y>3</y>
-    <show_units>false</show_units>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_5</name>
-    <pv_name>$(P)CstatH-Pos2A:$(D)</pv_name>
-    <x>720</x>
-    <y>3</y>
-    <show_units>false</show_units>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_6</name>
-    <pv_name>$(P)CstatV-Pos1:$(D)</pv_name>
-    <x>850</x>
-    <y>3</y>
-    <show_units>false</show_units>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_7</name>
-    <pv_name>$(P)CstatV-Pos2:$(D)</pv_name>
-    <x>970</x>
-    <y>3</y>
-    <show_units>false</show_units>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_8</name>
-    <pv_name>$(P)CstatV-Pos3:$(D)</pv_name>
-    <x>1090</x>
-    <y>3</y>
-    <show_units>false</show_units>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -67,20 +25,11 @@
     <y>30</y>
     <width>67</width>
   </widget>
-  <widget type="checkbox" version="2.0.0">
-    <name>Check Box</name>
-    <pv_name>$(P)$(D)-dBm:sRdV.DISA</pv_name>
-    <label>Ch. Disabled</label>
-    <x>10</x>
-    <y>3</y>
-    <width>120</width>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Entry</name>
-    <pv_name>$(P)$(D)-Offset:cSetV</pv_name>
-    <x>70</x>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(D)-Offset:sOn</pv_name>
+    <x>210</x>
     <y>30</y>
-    <width>50</width>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
@@ -89,14 +38,23 @@
     <y>30</y>
     <width>50</width>
   </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED</name>
-    <pv_name>$(P)$(D)-Offset:sOn</pv_name>
-    <x>210</x>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(D)-Offset:cSetV</pv_name>
+    <x>70</x>
     <y>30</y>
+    <width>50</width>
+  </widget>
+  <widget type="checkbox" version="2.0.0">
+    <name>Check Box</name>
+    <pv_name>$(P)$(D)-dBm:sRdV.DISA</pv_name>
+    <label>Ch. Disabled</label>
+    <x>10</x>
+    <y>3</y>
+    <width>120</width>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>Action Button_2</name>
+    <name>Action Button</name>
     <actions>
       <action type="write_pv">
         <pv_name>$(pv_name)</pv_name>
@@ -112,7 +70,7 @@
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>Action Button_3</name>
+    <name>Action Button_1</name>
     <actions>
       <action type="write_pv">
         <pv_name>$(pv_name)</pv_name>
@@ -128,7 +86,7 @@
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Text Update_9</name>
+    <name>Text Update_3</name>
     <pv_name>$(P)$(D)-dBm:sRdV</pv_name>
     <x>360</x>
     <y>28</y>
