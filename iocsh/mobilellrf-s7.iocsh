@@ -32,5 +32,6 @@
 #iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR3),ASYN_PORT=$(ASYN_PORT3),IP_PORT=5025,P=$(PREFIX3),DEV1=FwdPwr,DEV2=ReflPwr,N=1")
 #iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR4),ASYN_PORT=$(ASYN_PORT4),IP_PORT=5025,P=$(PREFIX3),DEV1=SparePwr,DEV2=InPwr,N=2")
 s7plcConfigure("$(ASYN_PORT2)","$(IP_ADDR2)",$(IP_PORT2=3000),26,26,1,2500,500)
-dbLoadRecords("s7-plc.db", "ASYN_PORT=$(ASYN_PORT2),TOP=$(TOP),PREFIX=$(PREFIX2),DEV_NAME=$(DEVICE2=S7-1200:)")
+dbLoadRecords("s7-plc.db", "PLC_PORT=$(ASYN_PORT2),TOP=$(TOP),P=$(PREFIX2),DEV_NAME=$(DEVICE2=S7-1200:)")
 #dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT=$(ASYN_PORT2),ADDR='0',IMAX='1024',OMAX='256'")
+iocshLoad("$(autosave_DIR)autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCDIR)")
