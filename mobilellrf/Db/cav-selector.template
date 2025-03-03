@@ -47,32 +47,7 @@ record (sel, "$(P)Connected:CAV-LB") {
     field(SCAN, "1 second")    
 }
 
-record(ao, "$(P)FwdPwr:sRdV") {
-   field (DESC, "Forward Power from LabView")
-   field (EGU, "W")
-   field (DTYP, "Soft Channel")
-   field (PREC, "1")
-   field (LOPR, "0")
-   field (HOPR, "350")
-}
 
-record(ao, "$(P)ReflPwr:sRdV") {
-   field (DESC, "Reflected Power from LabView")
-   field (EGU, "W")
-   field (DTYP, "Soft Channel")
-   field (PREC, "1")
-   field (LOPR, "0")
-   field (HOPR, "350")
-}
-
-record(ao, "$(P)InPwr:sRdV") {
-   field (DESC, "Input Power from LabView")
-   field (EGU, "W")
-   field (DTYP, "Soft Channel")
-   field (PREC, "1")
-   field (LOPR, "0")
-   field (HOPR, "350")
-}
 
 record(ao, "$(P)SEL-Fc:sRdV") {
    field (DESC, "SEL center freq from LabView")

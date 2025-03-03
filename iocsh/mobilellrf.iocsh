@@ -8,11 +8,15 @@
 #- >> Mandatory
 #- ASYN_PORT1     - Asyn PORT name for agilent33220a function generator
 #- ASYN_PORT2     - Asyn PORT name for arduino PLC
+#- ASYN_PORT3	  - Asyn PORT name for N1912A power meter #1 
+#- ASYN_PORT4	  - Asyn PORT name for N1912A power meter #2 
 #- PREFIX1	  - PV PREFIX for agilent fg
 #- PREFIX2	  - PV PREFIX for arduino PLC
 #- PREFIX3	  - PV PREFIX for cavity selection PVs
 #- IP_ADDR1	  - ethernet address of agilent fg
 #- IP_ADDR2	  - ethernet address of arduino PLC
+#- IP_ADDR3	  - ethernet address of Power meter #1 N1912A 
+#- IP_ADDR4	  - ethernet address of Power meter #2 N1912A 
 #- IOCNAME	  - Prefix for the asynRec
 #- TOP	   	  - top directory for autosave
 #-
@@ -25,4 +29,6 @@
 iocshLoad("$(agilent33220a_DIR)agilent33220a.iocsh", "IP=$(IP_ADDR1),P=$(PREFIX1),DEV=$(DEVICE1=FUNCGEN-1),ASYN_PORT=$(ASYN_PORT1)")
 iocshLoad("$(arduinoplc_DIR)arduinoplc.iocsh", "IP_ADDR=$(IP_ADDR2),ASYN_PORT=$(ASYN_PORT2),TOP=$(TOP),PREFIX=$(PREFIX2),DEV_NAME=$(DEVICE2=ArduinoPMC:)")
 dbLoadRecords("mobilellrf.db", "PCAV=$(PREFIX3),PRF=$(PREFIX1)$(DEVICE1=FUNCGEN-1),PLC=$(PREFIX2)$(DEVICE2=ArduinoPMC:)")
+iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR3),ASYN_PORT=$(ASYN_PORT3),IP_PORT=5025,P=$(PREFIX3),DEV1=FwdPwr,DEV2=ReflPwr,N=1")
+iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR4),ASYN_PORT=$(ASYN_PORT4),IP_PORT=5025,P=$(PREFIX3),DEV1=SparePwr,DEV2=InPwr,N=2")
 dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT=$(ASYN_PORT1),ADDR='0',IMAX='1024',OMAX='256'")

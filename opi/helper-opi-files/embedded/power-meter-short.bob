@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-02-28 14:59:41 by konrad-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>1200</width>
+  <height>60</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(D):sRdV</pv_name>
+    <x>360</x>
+    <y>3</y>
+    <height>22</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Power measurement $(D):</text>
+    <x>140</x>
+    <y>3</y>
+    <width>230</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Offset:</text>
+    <x>10</x>
+    <y>30</y>
+    <width>67</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(D)-Offset:sOn</pv_name>
+    <x>210</x>
+    <y>30</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(D)-Offset:sSetV</pv_name>
+    <x>140</x>
+    <y>30</y>
+    <width>50</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P)$(D)-Offset:cSetV</pv_name>
+    <x>70</x>
+    <y>30</y>
+    <width>50</width>
+  </widget>
+  <widget type="checkbox" version="2.0.0">
+    <name>Check Box</name>
+    <pv_name>$(P)$(D)-dBm:sRdV.DISA</pv_name>
+    <label>Ch. Disabled</label>
+    <x>10</x>
+    <y>3</y>
+    <width>120</width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <description>OFF</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(D)-Offset:cOn</pv_name>
+    <x>240</x>
+    <y>30</y>
+    <width>40</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>ON</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(D)-Offset:cOn</pv_name>
+    <x>290</x>
+    <y>30</y>
+    <width>40</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(D)-dBm:sRdV</pv_name>
+    <x>360</x>
+    <y>28</y>
+    <height>22</height>
+    <vertical_alignment>2</vertical_alignment>
+  </widget>
+</display>
