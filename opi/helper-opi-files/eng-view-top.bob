@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-02-28 14:54:31 by konrad-->
+<!--Saved on 2025-03-04 13:01:27 by konrad-->
 <display version="2.0.0">
   <name>eng-view</name>
   <width>1610</width>
@@ -819,9 +819,22 @@ pulsed mode, output disabled</tooltip>
           </widget>
         </children>
       </tab>
+      <tab>
+        <name>S7-1200 PLC</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_6</name>
+            <file>s7-1200-plc.bob</file>
+            <x>10</x>
+            <y>10</y>
+            <width>1388</width>
+            <height>702</height>
+          </widget>
+        </children>
+      </tab>
     </tabs>
     <width>1610</width>
     <height>930</height>
-    <active_tab>2</active_tab>
+    <active_tab>1</active_tab>
   </widget>
 </display>

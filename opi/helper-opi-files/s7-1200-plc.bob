@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-03-03 14:47:55 by konrad-->
+<!--Saved on 2025-03-04 13:24:25 by konrad-->
 <display version="2.0.0">
   <name>S7-1200 PLC</name>
   <macros>
-    <P>xxx-Aux:</P>
+    <P>LLRF-Ctrl:</P>
   </macros>
   <width>1400</width>
   <height>700</height>
@@ -376,5 +376,22 @@
     <pv_name>$(P)VCACtrl:cSetV</pv_name>
     <x>630</x>
     <y>300</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>External Interlock:</text>
+    <x>30</x>
+    <y>200</y>
+    <width>160</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_10</name>
+    <pv_name>$(P)Mobile:ExtIntlk</pv_name>
+    <x>180</x>
+    <y>200</y>
+    <off_color>
+      <color name="MAJOR" red="252" green="13" blue="27">
+      </color>
+    </off_color>
   </widget>
 </display>

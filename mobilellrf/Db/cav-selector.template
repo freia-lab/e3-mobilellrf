@@ -1,7 +1,7 @@
 record(calc, "$(P)Connected:Position-HDW") {
-    field(INPA, "$(PA)DI-00")
-    field(INPB, "$(PA)DI-01")
-    field(INPC, "$(PA)DI-02")
+    field(INPA, "$(PA)CavPos:B0")
+    field(INPB, "$(PA)CavPos:B1")
+    field(INPC, "$(PA)CavPos:B2")
     field(CALC, "D=0?C*4+B*2+A:E")
     field(SDIS, "$(P)Connected:Position-SIM MS")
     field(DISV, "-1")
@@ -76,9 +76,9 @@ record(ao, "$(P)Eacc:sRdV") {
 }
 
 record(calc, "$(P)Attenuation") {
-    field(INPA, "$(PA)DO-00")
-    field(INPB, "$(PA)DO-01")
-    field(INPC, "$(PA)DO-02")
+    field(INPA, "$(PA)StepAtten10dB:cOn")
+    field(INPB, "$(PA)StepAtten20dB:cOn")
+    field(INPC, "$(PA)StepAtten40dB:cOn")
     field(CALC, "C*40+B*20+A*10")
     field(EGU, "dB")
     field(SCAN, "1 second")

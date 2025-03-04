@@ -84,6 +84,14 @@ record (bi, "$(P)SSPA:sEnable") {
    field(ONAM, "Enabled")
    field(INP, "@$(PLC_PORT)/0 T=BYTE B=7")
 }
+record (bi, "$(P)Mobile:ExtIntlk") {
+   field(DESC, "External Interlock")
+   field(DTYP, "S7plc")
+   field(SCAN, "I/O Intr")
+   field(ZNAM, "Fault")
+   field(ONAM, "OK")
+   field(INP, "@$(PLC_PORT)/1 T=BYTE B=0")
+}
 
 ########################################################
 # Binary outputs
