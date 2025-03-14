@@ -1,0 +1,38 @@
+# This should be the included snippet to configure and run the deployed IOC. 
+# It should be loaded with
+#
+#   iocshLoad("$(mobilellrf_DIR)mobilellrf.iocsh", "MACRO1=xxx,MACRO2=yyy,...")
+
+#- ###            mobilellrf ioc                    ###
+#- ####################################################
+#- >> Mandatory
+#- ASYN_PORT1     - Asyn PORT name for agilent33220a function generator
+#- ASYN_PORT2     - Asyn PORT name for S7-1200 PLC
+#- ASYN_PORT3	  - Asyn PORT name for N1912A power meter #1 
+#- ASYN_PORT4	  - Asyn PORT name for N1912A power meter #2 
+#- PREFIX1	  - PV PREFIX for agilent fg
+#- PREFIX2	  - PV PREFIX for S7-1200 PLC
+#- PREFIX3	  - PV PREFIX for cavity selection PVs
+#- IP_ADDR1	  - ethernet address of agilent fg
+#- IP_ADDR2	  - ethernet address of S7-1200 PLC
+#- IP_ADDR3	  - ethernet address of Power meter #1 N1912A 
+#- IP_ADDR4	  - ethernet address of Power meter #2 N1912A 
+#- IOCNAME	  - Prefix for the asynRec
+#- TOP	   	  - top directory for autosave
+#-
+#- >> Optional
+#- IP_PORT1	  - IP port number for agilent fg (default 5025)
+#- IP_PORT2	  - IP port number for S7-1200 PLC (default 3000)
+#- DEVICE1	  - device name for agilent fg (default FUNCGEN-1)
+#- DEVICE2	  - device name for arduino PLC (default ArduinoPMC:)
+
+iocshLoad("$(agilent33220a_DIR)agilent33220a.iocsh", "IP=$(IP_ADDR1),P=$(PREFIX1),DEV=$(DEVICE1=FUNCGEN-1),ASYN_PORT=$(ASYN_PORT1)")
+#iocshLoad("$(s7plc_DIR)arduinoplc.iocsh", "IP_ADDR=$(IP_ADDR2),ASYN_PORT=$(ASYN_PORT2),TOP=$(TOP),PREFIX=$(PREFIX2),DEV_NAME=$(DEVICE2=ArduinoPMC:)")
+s7plcConfigure("$(ASYN_PORT2)","$(IP_ADDR2)",$(IP_PORT2=3000),26,26,1,2500,500)
+dbLoadRecords("mobilellrf.db", "PCAV=$(PREFIX3),PRF=$(PREFIX1)$(DEVICE1=FUNCGEN-1),PLC=$(ARDUINO_PREFIX)$(DEVICE2=ArduinoPMC:),S7PLC=$(PREFIX2),PLC_PORT=$(ASYN_PORT2)")
+iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR3),ASYN_PORT=$(ASYN_PORT3),IP_PORT=5025,P=$(PREFIX3),DEV1=FwdPwr,DEV2=ReflPwr,N=1")
+iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR4),ASYN_PORT=$(ASYN_PORT4),IP_PORT=5025,P=$(PREFIX3),DEV1=SparePwr,DEV2=InPwr,N=2")
+#dbLoadRecords("s7-plc.db", "PLC_PORT=$(ASYN_PORT2),TOP=$(TOP),P=$(PREFIX2),DEV_NAME=$(DEVICE2=S7-1200:)")
+dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT=$(ASYN_PORT1),ADDR='0',IMAX='1024',OMAX='256'")
+iocshLoad("$(autosave_DIR)autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCDIR)")
+epicsEnvSet("STREAM_PROTOCOL_PATH","$(agilent33220a_DB):$(n1912a_DB)")
