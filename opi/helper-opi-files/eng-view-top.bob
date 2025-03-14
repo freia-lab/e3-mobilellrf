@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-03-04 13:01:27 by konrad-->
+<!--Saved on 2025-03-14 09:19:44 by konrad-->
 <display version="2.0.0">
   <name>eng-view</name>
   <width>1610</width>
@@ -185,9 +185,9 @@ pulsed mode, output disabled</tooltip>
             <name>Group_1</name>
             <macros>
               <pv_name>LLRF-Ctrl:Connected:Position</pv_name>
-              <N>2</N>
+              <N>3</N>
               <CS>CstatH</CS>
-              <POS>2</POS>
+              <POS>2A</POS>
             </macros>
             <x>610</x>
             <y>42</y>
@@ -230,9 +230,9 @@ pulsed mode, output disabled</tooltip>
             <name>Group_2</name>
             <macros>
               <pv_name>LLRF-Ctrl:Connected:Position</pv_name>
-              <N>3</N>
+              <N>2</N>
               <CS>CstatH</CS>
-              <POS>2A</POS>
+              <POS>2</POS>
             </macros>
             <x>730</x>
             <y>42</y>
@@ -835,6 +835,6 @@ pulsed mode, output disabled</tooltip>
     </tabs>
     <width>1610</width>
     <height>930</height>
-    <active_tab>1</active_tab>
+    <active_tab>2</active_tab>
   </widget>
 </display>
