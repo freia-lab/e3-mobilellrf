@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-03-14 09:15:59 by konrad-->
+<!--Saved on 2025-03-21 12:39:17 by konrad-->
 <display version="2.0.0">
   <name>Display</name>
   <width>1200</width>
@@ -10,12 +10,14 @@
     <x>360</x>
     <y>3</y>
     <height>22</height>
+    <precision>6</precision>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_3</name>
     <pv_name>$(P)CstatH-Pos1:$(D)</pv_name>
     <x>480</x>
     <y>3</y>
+    <precision>6</precision>
     <show_units>false</show_units>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -23,6 +25,7 @@
     <pv_name>$(P)CstatH-Pos2A:$(D)</pv_name>
     <x>600</x>
     <y>3</y>
+    <precision>6</precision>
     <show_units>false</show_units>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -30,6 +33,7 @@
     <pv_name>$(P)CstatH-Pos2:$(D)</pv_name>
     <x>720</x>
     <y>3</y>
+    <precision>6</precision>
     <show_units>false</show_units>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -37,6 +41,7 @@
     <pv_name>$(P)CstatV-Pos1:$(D)</pv_name>
     <x>850</x>
     <y>3</y>
+    <precision>6</precision>
     <show_units>false</show_units>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -44,6 +49,7 @@
     <pv_name>$(P)CstatV-Pos2:$(D)</pv_name>
     <x>970</x>
     <y>3</y>
+    <precision>6</precision>
     <show_units>false</show_units>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -51,6 +57,7 @@
     <pv_name>$(P)CstatV-Pos3:$(D)</pv_name>
     <x>1090</x>
     <y>3</y>
+    <precision>6</precision>
     <show_units>false</show_units>
   </widget>
   <widget type="label" version="2.0.0">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-03-14 09:19:44 by konrad-->
+<!--Saved on 2025-03-21 12:36:21 by konrad-->
 <display version="2.0.0">
   <name>eng-view</name>
   <width>1610</width>
@@ -447,6 +447,210 @@ pulsed mode, output disabled</tooltip>
             <y>242</y>
             <width>1210</width>
             <height>56</height>
+          </widget>
+          <widget type="group" version="3.0.0">
+            <name>Group</name>
+            <macros>
+              <D1>InPwr</D1>
+              <D2>SparePwr</D2>
+              <D>N1912A-2</D>
+              <P>LLRF-Ctrl:</P>
+            </macros>
+            <x>18</x>
+            <y>370</y>
+            <width>210</width>
+            <height>50</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_1</name>
+              <actions execute_as_one="true">
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sSetV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sOn.DISA</pv_name>
+                  <value>1</value>
+                  <description>DIsable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-dBm:sRdV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sSetV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sOn.DISA</pv_name>
+                  <value>1</value>
+                  <description>DIsable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-dBm:sRdV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D):SystErr.DISA</pv_name>
+                  <value>1</value>
+                  <description>WritePV</description>
+                </action>
+              </actions>
+              <text>Disable $(D)</text>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_2</name>
+              <actions execute_as_one="true">
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sSetV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sOn.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-dBm:sRdV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sSetV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sOn.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-dBm:sRdV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D):SystErr.DISA</pv_name>
+                  <value>0</value>
+                  <description>WritePV</description>
+                </action>
+              </actions>
+              <text>Enable $(D)</text>
+              <x>110</x>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+          </widget>
+          <widget type="group" version="3.0.0">
+            <name>Group_12</name>
+            <macros>
+              <D1>FwdPwr</D1>
+              <D2>ReflPwr</D2>
+              <D>N1912A-1</D>
+              <P>LLRF-Ctrl:</P>
+            </macros>
+            <x>18</x>
+            <y>310</y>
+            <width>210</width>
+            <height>50</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_3</name>
+              <actions execute_as_one="true">
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sSetV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sOn.DISA</pv_name>
+                  <value>1</value>
+                  <description>DIsable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-dBm:sRdV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sSetV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sOn.DISA</pv_name>
+                  <value>1</value>
+                  <description>DIsable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-dBm:sRdV.DISA</pv_name>
+                  <value>1</value>
+                  <description>Disable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D):SystErr.DISA</pv_name>
+                  <value>1</value>
+                  <description>WritePV</description>
+                </action>
+              </actions>
+              <text>Disable $(D)</text>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_4</name>
+              <actions execute_as_one="true">
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sSetV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-Offset:sOn.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D1)-dBm:sRdV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sSetV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-Offset:sOn.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable offset sate read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D2)-dBm:sRdV.DISA</pv_name>
+                  <value>0</value>
+                  <description>Enable power read-out</description>
+                </action>
+                <action type="write_pv">
+                  <pv_name>$(P)$(D):SystErr.DISA</pv_name>
+                  <value>0</value>
+                  <description>WritePV</description>
+                </action>
+              </actions>
+              <text>Enable $(D)</text>
+              <x>110</x>
+              <height>50</height>
+              <tooltip>$(actions)</tooltip>
+            </widget>
           </widget>
         </children>
       </tab>

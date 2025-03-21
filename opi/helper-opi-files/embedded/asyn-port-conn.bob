@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-03-20 22:31:53 by konrad-->
+<display version="2.0.0">
+  <name>asyn-port-conn</name>
+  <macros>
+    <R></R>
+  </macros>
+  <width>260</width>
+  <height>110</height>
+  <widget type="action_button" version="3.0.0">
+    <name>Disconnect</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name).AUCT</pv_name>
+        <value>0</value>
+        <description>Disable autoconnect</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(pv_name).CNCT</pv_name>
+        <value>0</value>
+        <description>Disconnect</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)</pv_name>
+    <text>Disconnect</text>
+    <x>10</x>
+    <y>40</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Disconnect_1</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name).AUCT</pv_name>
+        <value>1</value>
+        <description>Reconnect</description>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)</pv_name>
+    <text>Reconnect</text>
+    <x>10</x>
+    <y>70</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>120</x>
+    <y>50</y>
+    <width>120</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Connected</text>
+      <x>15</x>
+      <width>90</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0!=0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(R).CNCT</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Disconnected</text>
+      <width>120</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(R).CNCT</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>120</x>
+    <y>80</y>
+    <width>130</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>noAutoConnect</text>
+      <width>130</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="254" green="194" blue="81">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(R).AUCT</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>autoConnect</text>
+      <x>10</x>
+      <width>110</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="60" green="180" blue="32">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0!=0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="!(pv0!=0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)$(R).AUCT</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(P)$(R).PORT</pv_name>
+    <x>100</x>
+    <y>10</y>
+    <width>140</width>
+    <items>
+      <item>PWRMTR1</item>
+      <item>PWRMTR2</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Select:</text>
+    <x>20</x>
+    <y>10</y>
+    <width>70</width>
+  </widget>
+</display>
