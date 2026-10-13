@@ -32,6 +32,8 @@ s7plcConfigure("$(ASYN_PORT2)","$(IP_ADDR2)",$(IP_PORT2=3000),26,26,1,2500,500)
 dbLoadRecords("mobilellrf.db", "PCAV=$(PREFIX3),PRF=$(PREFIX1)$(DEVICE1=FUNCGEN-1),PLC=$(ARDUINO_PREFIX)$(DEVICE2=ArduinoPMC:),S7PLC=$(PREFIX2),PLC_PORT=$(ASYN_PORT2)")
 iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR3),ASYN_PORT=$(ASYN_PORT3),IP_PORT=5025,P=$(PREFIX3),DEV1=FwdPwr,DEV2=ReflPwr,N=1")
 iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=$(IP_ADDR4),ASYN_PORT=$(ASYN_PORT4),IP_PORT=5025,P=$(PREFIX3),DEV1=SparePwr,DEV2=InPwr,N=2")
+iocshLoad("$(n1912a_DIR)n1912a.iocsh", "IP=192.168.10.36,ASYN_PORT=PWRMTR3,IP_PORT=5025,P=LLRF-Ctrl:,DEV1=FwdPwr-2,DEV2=ReflPwr-2,N=3")
+
 #dbLoadRecords("s7-plc.db", "PLC_PORT=$(ASYN_PORT2),TOP=$(TOP),P=$(PREFIX2),DEV_NAME=$(DEVICE2=S7-1200:)")
 dbLoadRecords("asynRecord.db","P=$(IOCNAME),R=:asynRec,PORT=$(ASYN_PORT1),ADDR='0',IMAX='1024',OMAX='256'")
 iocshLoad("$(autosave_DIR)autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCDIR)")
